@@ -1,0 +1,23 @@
+{
+	"author": "Craig Walker <craig.walker@me.com>",
+	"name": "WDCNZ-2011",
+	"main": "server",
+	"homepage": "https://github.com/storminwalker/WDCNZ-2011",
+	"description": "My slides & example code from my WDCNZ 2011 Node.JS talk",
+	"keywords": ["WDCNZ", "nodejs", "slides"],
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/storminwalker/WDCNZ-2011"
+	},
+	"dependencies": {
+		"cradle": "0.5.x",
+		"express": "2.4.x",
+		"node-extjs": "0.0.x",
+		"node-static": "0.5.x",
+		"socket.io": "0.7.x"
+	},
+  	"engines": { 
+  		"node": ">= 0.4.1 < 0.5.0" 
+  	}
+}

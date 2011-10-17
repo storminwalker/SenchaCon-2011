@@ -1,0 +1,261 @@
+$base-color: #12B5E7; 
+$color-light: #444; 
+$complement: #777;
+$border-color: #ecedef;
+
+$include_all_icons: false;
+
+$base-font: 18px;
+$base-line-height: 18px;
+
+@import 'sencha-touch/default/all';
+
+@include sencha-panel;
+@include sencha-carousel;
+@include sencha-layout;
+
+@font-face { 
+	font-family: 'National'; 
+	src: url(/resources/fonts/National-Book.otf); 
+}
+
+@font-face { 
+	font-family: 'National'; 
+	font-weight: bold;
+	src: url(/resources/fonts/National-Bold.otf); 
+}
+
+body {
+    font-family: "National";//, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", "Bitstream Vera Sans", sans-serif;
+    font-size: 24px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   // background: #12b5e7;
+}
+
+.x-fullscreen {	
+	//background: none !important;
+	background: transparent;
+	@include background-image(linear-gradient(#f0f0f0, #eeeeee, #e8e8e8)); //#ffffff, #f5f5f5, #fefefe, 
+}
+
+.x-html {
+	padding: 0px;
+}
+
+body.x-tablet {
+	font-size: 104%;
+}
+
+.x-carousel-item .x-panel-body  {
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
+
+div.slide {
+    overflow: hidden;
+    position: relative;
+	margin: 0 auto;
+	width: 1024px;
+   	height: 690px;
+
+	&.rounded {
+		@include border-radius(20px);
+		background: white;
+	}
+
+	&.blue {
+		background: #00b7e3;
+		
+		ul {
+			text-align:left;
+		}
+		ul li {
+			text-shadow: 0 0 1px rgba(0,0,0,0.3);
+			color: #FFF;
+			font-size: 2.5em;
+			font-weight: bold;
+			list-style-type: none;
+			line-height: 0.75em;
+			padding:0px;
+			text-shadow: 1px 0 2px rgba(0,0,0,0.3);	
+		}
+		
+	}
+	
+	.pageIndex {
+		display: block;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		font-size:12px;
+	}
+   
+	header {
+		position: absolute;
+		top: 25px;
+		left: 30px;
+	}
+	
+	section, footer {
+		display: block;
+		margin: 100px 30px 0;
+		overflow: hidden;
+	}
+	
+	section.middle {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;	
+		width: 1024px;
+		height: 690px;
+	}
+		
+
+	h1 {
+		//font-size: 50px;
+		font-weight: bold;
+		text-shadow: 0 0 1px rgba(0,0,0,0.3);
+		//text-shadow: 0 1px 0 #000;
+		color: #00b7e3;
+		font-size: 4em;
+		font-weight: bold;
+	}
+	
+	section h1 {
+		color: #00b7e3;
+		text-shadow: 0 0 1px rgba(0,0,0,0.3);
+		font-size: 6em;
+		font-weight: bold;
+	}
+	
+	&.blue section h1 {
+		color: #FFF;
+		text-shadow: 1px 0 2px rgba(0,0,0,0.3);
+	}
+	
+	h2 {
+		font-size: 40px;
+		margin: 15px 0 5px;
+	
+		&:first-child {
+			margin-top: 0;
+		}	
+	}
+	
+	section ul {
+		font-size: 3em;
+	}
+	
+	section ul li {
+		padding: 0px;
+		color: #525455;
+		text-shadow: 0 0 1px rgba(0,0,0,0.3);
+	}
+	
+	img.full-bg {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	img.shadow {
+		@include box-shadow();
+/*
+ border: 5px solid #c4c8cc;
+  -moz-box-shadow: 5px 5px 7px #888;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-box-shadow: 5px 5px 7px #888;
+  -webkit-border-bottom-right-radius: 15px;
+  */
+	}
+	
+	section > em {
+		font-size: 3em;
+		text-shadow: 0px 0 1px rgba(1,1,1,0.3);
+	}
+	div.ribbon {
+		position:absolute;
+		top:9em;
+		border:1px solid black;
+		border-left: none;
+		width:50%;
+		background: #00b7e3;
+		height: auto;
+		
+		span {
+			font-size: 3em;
+			color: #FFF;
+			display: block;
+			width: 100%;
+		}
+		
+		&.left {
+			span {
+				text-align: right;
+				padding-right: 20px;
+			}
+		}
+		
+		&.right { 
+			span {
+				text-align: left;
+				padding-left: 20px;
+			}
+		}
+	}
+	
+	&.node {
+		background:#22252A;
+		
+		a, a:link, a:hover, a:active {
+			color: #CD5 !important;
+			font-size: 2em;
+		}
+	}
+	
+	section h3 {
+		color: #525455;
+		font-weight: bold;
+		text-shadow: 0 0 1px rgba(0,0,0,0.3);
+		font-size: 2em;
+		margin-bottom: 5px;
+		margin-left: 0px;
+	}
+}
+
+.syntaxhighlighter {
+	margin-left: 50px !important;
+	font-size: 2em !important;
+	
+	.line.highlighted.alt1, .line.highlighted.alt2 {
+		background-color: transparent !important;
+		
+		code {
+			font-weight: bold !important;
+		}
+	}
+}
+
+div.node div.syntaxhighlighter {
+	background: #22252A !important;
+	margin-left: 0px !important;
+	
+	.line.alt1, .line.alt2 {
+		background: #22252A !important;	
+		text-align: center !important;
+		
+		code.bash {
+			color: #FFF !important;
+		}
+	}
+}
+
+.longcode .syntaxhighlighter {
+	font-size: 1.5em !important;
+}

@@ -1,0 +1,698 @@
+
+@mixin xero-autocompleter {
+
+	.xero-field-autocompleter-overlay {
+  
+  		&.x-floating.x-panel {
+			@include border-radius(0);
+			background-color: #F7F7F7;
+			padding: 0px;
+		}
+		
+		.x-floating.x-panel-body {
+			background-color: #F7F7F7;
+			@include background-image(linear-gradient(#cccccc, #cccccc 10%, #f7f7f7))
+		}
+		
+		
+		//.x-list .x-list-item:first-child {
+		//	@include linear-gradient(color-stops(#CCC, #CCC 10%, #F7F7F7));
+		//}
+	}
+	
+	$select-down-size: 1.1em;
+
+	.xero-field-autocompleter .x-field-clear-container {
+	//	padding: 0 2em;
+	}
+
+	.x-field-plus-container {
+		min-height: $form-field-height;
+		background-color: $form-field-bg-color;
+		@include display-box;
+		@include box-orient(horizontal);
+		@include box-align(center);
+		@include box-pack(center);
+		padding: 0 .3em;
+	}
+	
+	.x-field-plus {
+		background-image: inline-image("../images/plus.jpg");
+		//url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjkwMDRGRjU0REE5RjExREZCMTk5ODk3ODlFMTgwRjlDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjkwMDRGRjU1REE5RjExREZCMTk5ODk3ODlFMTgwRjlDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTAwNEZGNTJEQTlGMTFERkIxOTk4OTc4OUUxODBGOUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTAwNEZGNTNEQTlGMTFERkIxOTk4OTc4OUUxODBGOUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6i0RQCAAAH5klEQVR42lRWW2wcZxX+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');
+		background-repeat:no-repeat;
+		background-color:transparent;
+		color:transparent;
+		font-weight:bold;
+		font-size:20px;
+		height:40px;
+		line-height:0.9em;
+		padding:0px 0.27em;
+		text-align:center;
+		width:40px;
+		position:absolute;
+		top:3px;
+		right:10px;
+	}
+	
+	.x-android .xero-field-autocompleter {
+		line-height: 1.2em;
+		padding: 0 .3em;
+	}
+	
+	.xero-field-autocompleter {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 0;
+		left: auto;
+		right: 0;
+		position: absolute;
+		display: block;
+		margin: 1em;
+		border: .4em solid transparent;
+		border-top-color: #DDD;
+		z-index: 1;
+	}
+/*
+	.xero-select-down-container {
+		min-height: 2.5em;
+		background-color: white;
+		display: -webkit-box;
+		display: box;
+		-webkit-box-orient: horizontal;
+		box-orient: horizontal;
+		-webkit-box-align: center;
+		box-align: center;
+		-webkit-box-pack: center;
+		box-pack: center;
+		padding: 0 .3em;
+	}
+	
+	.xero-select-down {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 0;
+		left: auto;
+		right: 0;
+		position: absolute;
+		display: block;
+		margin: 1em;
+		border: .4em solid transparent;
+		border-top-color: #DDD;
+		z-index: 1;
+	}
+	
+	.xero-select-down {
+		width: 1.1em;
+		height: 1.1em;
+		-webkit-border-radius: 0.55em;
+		border-radius: 0.55em;
+		background-color: rgba(0, 0, 0, 0.15);
+		color: white;
+		font-weight: bold;
+		line-height: .9em;
+		text-align: center;
+		padding: 0 .27em;
+		border-top-left-radius: 0.55em 0.55em;
+		border-top-right-radius: 0.55em 0.55em;
+		border-bottom-right-radius: 0.55em 0.55em;
+		border-bottom-left-radius: 0.55em 0.55em;
+	}
+*/
+}
+
+@mixin xero-list-picker {
+  
+	.x-sheet.xero-list-picker {
+    	padding: 0;
+	
+		& > .x-sheet-body {
+			position: relative;
+			background-color: #fff;
+			@include border-radius($picker-sheet-radius);
+			@include background-clip(padding-box);
+			overflow: hidden;
+			margin: 0.4em; //$sheet-padding;
+		}
+	
+		.x-list-item {
+			vertical-align: middle;
+			text-align: center;
+			height: $picker-row-height;
+			line-height: $picker-row-height;
+			font-weight: normal;
+			padding: 0 10px 0 10px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+	}
+  
+}
+
+@mixin xero-buttonfield {
+
+	.xero-buttonfield-pressed
+	{
+		background-color: #1d5e96;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #69aae3), color-stop(2%, #2578c1), color-stop(100%, #174b78));
+		background-image: linear-gradient(top, #69aae3 0%, #2578c1 2%, #174b78 100%);
+		color: white;
+		border-top-color: #2578c1;
+		border-bottom-color: #103656;
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+		
+		.x-form-label
+		{
+			background-color: #1d5e96;
+			background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #69aae3), color-stop(2%, #2578c1), color-stop(100%, #174b78));
+			background-image: linear-gradient(top, #69aae3 0%, #2578c1 2%, #174b78 100%);
+			color: white;
+			border-top-color: #2578c1;
+			border-bottom-color: #103656;
+			text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+		}
+		
+		.x-input-button
+		{
+			background-color: #1d5e96;
+			background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #69aae3), color-stop(2%, #2578c1), color-stop(100%, #174b78));
+			background-image: linear-gradient(top, #69aae3 0%, #2578c1 2%, #174b78 100%);
+			color: white;
+			border-top-color: #2578c1;
+			border-bottom-color: #103656;
+			text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+		}
+	}
+	
+	.x-field-arrow-container {
+		min-height: $form-field-height;
+		background-color: $form-field-bg-color;
+		@include display-box;
+		@include box-orient(horizontal);
+		@include box-align(center);
+		@include box-pack(center);
+		padding: 0 .3em;
+	}
+	
+	.x-field-arrow {
+		background-image: inline-image("../images/chevron.png");
+		background-repeat:no-repeat;
+		background-color:transparent;
+		color:transparent;
+		font-weight:bold;
+		font-size:20px;
+		height:26px;
+		line-height:0.9em;
+		padding:0px 0.27em;
+		text-align:center;
+		width:26px;
+		position:absolute;
+		top:13px;
+		right:3px;
+	}
+}
+
+@mixin xero-pictos-iconmask($name) {
+  .x-tab img.#{$name}, .x-button img.x-icon-mask.#{$name} {
+    -webkit-mask-image: inline-image("../images/pictos/" + $name + ".png");
+  }
+}
+//, .x-field-focus
+.x-field-mask-pressed{
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	@include border-radius(3px);
+	//div span{
+	//  color:#23A4D2 !important;
+	//}
+}
+
+.x-field-pressed{
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	@include border-radius(3px);
+}
+
+@mixin xero-numberpad {
+	
+
+	.numberpad.x-sheet{
+	  background-image:none;
+		background-color:transparent;
+		border-top-width:0px;
+	}
+	
+	.numberpad .x-toolbar.x-docked-top{
+		@include background-image(linear-gradient(rgba(50,50,50,.4), rgba(40,40,40,.4) 48%, rgba(0,0,0,.4) 48%, rgba(0,0,0,.4)));
+		background-color:transparent;
+		text-align: center;
+		border-top:1px solid #bcbcbc;
+		border-bottom-width:0;
+		height:45px !important;
+		top:0 !important;
+	}
+
+	.x-toolbar-dark .btn.x-button{
+		border-width:0;
+		background-color:transparent;
+		@include background-image(linear-gradient(#757575, #1c1c1c 50%, #000 50%, #000));
+		-webkit-box-shadow: inset 0 1px 1px rgba(10, 10, 10, 0.8), 0 1px 0 rgba(240,240,240,.2);
+		width:39px;
+		height:29px;
+		position:relative;
+		text-shadow: 0 1px 0 #000 !important;
+		span{
+		  text-shadow: 0 1px 0 #000 !important;
+		}
+		color:#fff;
+		&.x-button-pressed{
+			@include background-image(linear-gradient(#757575, #1c1c1c 50%, #000 50%, #000));
+			-webkit-box-shadow: inset 0 1px 1px rgba(10, 10, 10, 0.8), 0 1px 0 rgba(240,240,240,.2) !important;
+		}
+	}
+		
+	.layout-box-inner{
+	  border-width:0;
+	}
+
+	.number-row{
+		width:100%;
+		display:block;
+		border-top:1px solid #404040;
+		position:relative;
+	}
+
+	.number-btn {
+	 
+		width:34%;
+		margin-left:34%;
+		padding:7px 0;
+
+		&.left, &.right{
+		  position:absolute;
+			top:0;
+			margin:0;
+		}
+		&.left{
+			left:0;
+		}
+		&.right{
+		  right:0;
+			border-width:1px 0 0 1px;
+		}
+		white-space:nowrap;
+		display:inline-block;
+		text-align: center;
+		@include background-image(linear-gradient(#6f7683, #4d5462));
+		@include border-radius(0);
+		@include box-shadow(none);
+
+		border:1px solid #404040;
+		border-width:1px 1px 0 0;
+
+		border-top:1px solid #9398a2;
+		font-size: 1.5em;
+		font-weight: bold;
+		color: white;
+		text-shadow: 0 -1px 1px rgba(0, 0, 0, .5);
+
+
+		&.x-button-pressed {
+			color: #535B68;
+			text-shadow: 0 1px 0 white;
+			background: -webkit-gradient(linear, left top, left bottom, from(#DBDBDD), to(#B4B4B8), color-stop(1, white));
+		}
+		&.numberpad-backspace {
+				&::after{
+					-webkit-mask-image: inline-image("../images/pictos/numberpad-backspace.png");
+					-webkit-mask-size: 23px 16px;
+					-webkit-mask-position: 0 0;
+					-webkit-mask-repeat: no-repeat;
+					@include background-image(linear-gradient(#7f8792, #535b68));
+					content:"";
+					display:block;
+					position:absolute;
+					top:16px;
+					right:40%;
+					width:23px;
+					height:16px;
+				}
+			&.x-button-pressed  {
+					&::after{
+						background-image: -webkit-gradient(linear, left top, left bottom, from(#DBDBDD), to(#B4B4B8), color-stop(1, white));
+						}
+			}
+		}
+		&.light {
+			@include background-image(linear-gradient(#dddee2, #b3b7be));
+			border-top-color:#e7e7ea;
+			color: #535B68;
+			text-shadow: 0 1px 0 #fff;
+			
+			&.x-button-pressed {
+				color: #fff;
+				text-shadow: 0 -1px 1px rgba(0, 0, 0, .5);
+				@include box-shadow(none);
+				-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .7), 0 1px 0 rgba(0, 0, 0, .3);
+				background-image: -webkit-gradient(linear, left top, left bottom, from(#7F8792), to(#535B68));
+			}
+		}
+	}
+}
+
+@mixin xero-indexbar {
+
+	.x-indexbar {
+		width: 2.5em;
+		-webkit-border-radius: 1em;
+		border-radius: 1em;
+  
+ 		.x-indexbar-item {
+			font-size: 1em !important;
+			padding: 1px;
+			&.left {
+				float: left;
+				clear: left;
+			}
+			&.right {
+				float: right;
+				clear: right;
+			}
+		}
+	}
+}
+
+
+@mixin xero-pinpad {
+	
+	.pinpad .x-panel{
+		width:100% !important;
+	}
+
+	.pinpad .logo-container{
+		padding:15px 0;
+		background-color:transparent;
+		.x-html{
+			min-height:inherit;
+			display:-webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-box-align: center;
+			-webkit-box-pack: start;
+		}
+	}
+
+	.pinpad {
+		
+		&.enter-passcode .x-panel-body{
+		   display: -webkit-box;
+		   -webkit-box-align: center;
+		   -webkit-box-pack: start;
+		   -webkit-box-orient: vertical;
+		   width:100%;
+
+			 .numberpad{
+				 position:static;
+				 display:-webkit-box;
+			 }
+
+		   .x-panel{
+				 position:static;
+		     //display:-webkit-box;
+		     //-webkit-box-flex:1;
+		   }
+		}
+		
+		.x-panel-body{
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-box-align: start;
+			-webkit-box-pack: start;
+			background-color:#f6f9f9;
+		}
+
+		.pinpad-title, 
+		.pinpad-fields, 
+		.error-msg{
+			display: -webkit-box;
+			-webkit-box-orient: horizontal;
+			-webkit-box-align: start;
+			-webkit-box-pack: start;
+			width:100%;
+		}
+
+		.error-msg, .error-msg h2{
+			color:#9fa4a8;
+			text-align:center;
+			font-size:14px;
+			letter-spacing:-.1px;
+			width:100%;
+			a{
+				text-decoration:none;
+				color:#01a2d4;
+			}
+			a:active{
+				color:#666;
+			}
+		}
+		.error-msg{
+			margin-top:15px;
+		}
+
+		.pinpad-title{
+			-webkit-box-pack: center;
+			padding:20px 0px;
+			h2{
+			  color:#9fa4a8;
+				text-align:center;
+				font-size:17px;
+				letter-spacing:-.1px;
+				a{
+				  text-decoration:none;
+					color:#01a2d4;
+				}
+				a:active{
+					color:#666;
+				}
+			}
+		}
+
+		.pinpad-fields{
+			-webkit-box-pack: center;
+		}
+
+		div.pinpad-fields {
+			div.pinpad-fld {
+				border-style:solid;
+				border-width:1px;
+				border-color:#bfc2c2 #dadddd #d6d6d6;
+				background-color:#fff;
+				display:-webkit-box;
+				-webkit-box-pack:center;
+				-webkit-box-align:center;
+				width:58px;
+				height:50px;
+				margin-right:10px;
+				-webkit-box-shadow: inset 0 2px 4px rgba(60, 60, 60, 0.1), 0 1px 0 #fff;
+				span {
+					-webkit-text-security: disc !important;
+					font-size:24px;
+					width:58px !important;
+					text-align:center;
+					display:block;
+				}
+				&:last-of-type{
+				  margin-right:0;
+				}
+			}
+		}
+		
+		
+	}
+}
+
+
+
+.error-msg.x-container{
+	color:#9fa4a8;
+	text-align:center;
+	font-size:14px;
+	letter-spacing:-.1px;
+	width:100%;
+	padding:15px 5% 10px 5%;
+	background-color:#FBFBFC;
+	a{
+		text-decoration:none;
+		color:#01a2d4;
+	}
+	a:active{
+		color:#666;
+	}
+}
+
+
+
+
+@mixin xero-calendar {
+	
+	.x-sheet-body .x-panel{
+		width:100% !important;
+	}
+
+	.x-form-calendar-picker-field {
+		width: 100%;
+		padding:.6em .4em;
+	}
+	
+	.calendar.x-sheet{
+	  background-image:none;
+		background-color:transparent;
+		border-top:1px solid #2b2b2b;
+	}
+	
+	.calendar .x-toolbar.x-docked-top{
+		@include background-image(linear-gradient(rgba(50,50,50,.4), rgba(40,40,40,.4) 48%, rgba(0,0,0,.4) 48%, rgba(0,0,0,.4)));
+		background-color:transparent;
+		text-align: center;
+		border-top:1px solid #bcbcbc;
+		border-bottom:1px solid #3a3d42;
+		height:45px !important;
+		top:0 !important;
+		.x-toolbar-title{
+			margin-top:8px;
+			font-size:18px;
+			color:#fff;
+			text-shadow: 0 -1px 0 rgba(30,30,30,.5);
+		}
+
+
+		.btn{
+				border-width:0;
+				background-color:transparent;
+				@include background-image(linear-gradient(#757575, #1c1c1c 50%, #000 50%, #000));
+				-webkit-box-shadow: inset 0 1px 1px rgba(10, 10, 10, 0.8), 0 1px 0 rgba(240,240,240,.2);
+				width:39px;
+				height:29px;
+				position:relative;
+				&.x-button.x-button-pressed{
+					@include background-image(linear-gradient(#757575, #1c1c1c 50%, #000 50%, #000));
+					-webkit-box-shadow: inset 0 1px 1px rgba(10, 10, 10, 0.8), 0 1px 0 rgba(240,240,240,.2) !important;
+				}
+				&::after{
+						top:0;
+						left:0;
+						position:absolute;
+						background-image: inline-image("../images/pictos/arrow-calendar.png");
+						background-size: 9px 12px;
+						background-position: center center;
+						background-repeat: no-repeat;
+						background-color:transparent !important;
+						-webkit-box-shadow: none !important;
+						width:39px;
+						height:29px;
+						content:"";
+				}
+				&.arrow_left{
+					@include border-radius(7px 0 0 7px);
+					margin-right:0;
+					&::after{
+						-webkit-transform: rotateY(180deg);
+					}
+				}
+				&.arrow_right{
+					@include border-radius(0 7px 7px 0);
+					margin-left:0;
+				}
+		}
+		
+
+
+	}
+
+	.calendar-month {
+		
+		width:100%;
+
+		td, th {
+			border: 1px solid #aaaeb5;
+			@include background-image(linear-gradient(#e2e2e4, #dfdfe2));
+			width:14%;
+			padding:0;
+		}
+		
+		td {
+			span{
+				display:block;
+				padding:.2em 0;
+
+				border-top:1px solid #f3f3f5;
+				border-right:1px solid #f3f3f5;
+
+				font-size: 20px;
+				font-weight: bold;
+				color: #455567;
+				@include single-text-shadow(#fff, 0, 1px, 0);
+				text-align: center;
+			}
+
+		}
+	
+		th {
+			background-color:none;
+			font-size: 10px;
+			height: 17px;
+			vertical-align: bottom;
+			text-align:center;
+			margin:0;
+			padding:0;
+			border-width:0;
+			color: #455567;
+			border-top:1px solid #b2b8bf;
+			@include single-text-shadow(#fff, 0, 1px, 0);
+		}
+
+		.calendar-other {
+			span{
+				color: #888d95;
+				opacity: .8;
+			}
+		}
+
+		.calendar-today {
+			background-image:none;
+			background-color:#7389a5;
+			-webkit-box-shadow:inset 0 0 28px rgba(31, 46, 66, 1);
+			span{
+				border-width:0;
+				color: #fff;
+				@include single-text-shadow(#394452, 0, 1px, 0);
+			}
+		}
+		.calendar-selected { 
+			border-width:0;
+			@include background-image(linear-gradient(#72b1ef, #2d8be7 49%, #0072e2 51%, #0072e2));
+			span{
+				border-width:0;
+				color: #fff;
+				@include single-text-shadow(#284f75, 0, -1px, 0);
+			}
+		}
+
+
+
+
+		.calendar-today.calendar-selected { 
+			background-color:#0072e2;
+			background-image:none;
+		}
+
+
+	}
+	
+	
+	
+	
+	
+	
+}
