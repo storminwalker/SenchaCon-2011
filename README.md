@@ -1,5 +1,5 @@
-WDCNZ 2011
-==========
+SenchaCon 2011
+==============
 
 Apocalypse Node
 ---------------
@@ -13,7 +13,7 @@ How to use
 
 Either download the zip or clone this repository:
 
-	git clone --depth 1 git://github.com/storminwalker/WDCNZ-2011
+	git clone --depth 1 git://github.com/storminwalker/SenchaCon-2011
 
 If you just want to look at the slides then that's cool. Just open /public/index.html into Chrome (sorry - it has some funky code that I only tested in Chrome). They will also render nicely onto an iPad - it's fixed to ~1024 x ~700 so while it will render on an iPhone it won't look very good.
 
@@ -46,8 +46,6 @@ Now go to the same site on an iPad (obviously you will need to use the external 
 Now as you swipe through the slide deck on your iPad (because it's Sencha Touch so it just works), you will see the slide deck on your desktop machine slide along with it! (Works going back and forwards).
 
 Basically it's just using a simple socket.io server that broadcasts the page of the "admin" to anyone listening (so if you change the url to /#/admin/31 for instance the app on screen will go straight to Page 31 as well).
-
-This is the one demo I wanted to show working during my presentation but due to the way the WiFi worked at WDCNZ I couldn't make it work.
 
 ### Run the server
 

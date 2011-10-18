@@ -94,6 +94,15 @@
     	</section>
 	</div>    
 	
+	<div class="slide rounded blue">
+		<header>
+			<h1>The single page app...</h1>
+		</header>
+    	<section class="middle">
+    		<h1 style="padding:50px;">do single page apps drawing</h1>
+        </section>
+    </div>
+    
 	<div class="slide rounded"> 
     	<section class="middle">
 	    	<img src="resources/images/server-side-frameworks.png" />
@@ -107,11 +116,73 @@
 	</div>    
 	
 	<div class="slide rounded blue">
-		<header>
-			<h1>Why Server-side JavaScript?</h1>
-		</header>
     	<section class="middle">
-    		<h1 style="padding:50px;">single page apps drawing</h1>
+    		<h1 style="padding:50px;">Context</h1>
+        </section>
+    </div>
+	
+	<div class="slide rounded blue">
+    	<section class="middle">
+    		<h1 style="padding:50px;">Human</h1>
+    		<h1 style="padding:50px;">Context</h1>
+        </section>
+    </div>
+    
+    <div class="slide rounded blue">
+    	<section class="middle">
+    		<h1 style="padding:50px;">Human</h1>
+    		<h1 style="padding:50px;">Context</h1>
+    		<h1 style="padding:50px;">Machine</h1>
+        </section>
+    </div>
+
+    <div class="slide rounded blue">
+    	<section class="middle">
+    		<h1 style="padding:50px;">JavaScript Everywhere&trade;</h1>
+        </section>
+    </div>
+    
+    <div class="slide rounded blue">
+    	<section class="middle">
+    		<h1 style="padding:50px;">JavaScript Everywhere&trade;</h1>
+        </section>
+    </div>
+    
+    <div class="slide" style="background:#000000;"> 
+    	<section class="middle">
+	    	<img src="resources/images/couchdb-logo.png"/>
+<pre class="brush: bash;"> 
+	brew install couchdb
+</pre>
+    	</section>
+	</div>    
+	
+	<div class="slide blue"> 
+    	<header>
+    		<h1>CouchDB</h1>
+    	</header>
+    	<section class="middle">
+			<ul>
+				<li>Document oriented database</li>
+				<li>Efficient & reliable bi-directional replication</li>
+				<li>Queried & indexed using MapReduce</li>
+				<li>Multiversion Concurrency Control</li>	
+				<li>RESTful API</li>
+			</ul>
+    	</section>
+	</div>    
+	
+	<div class="slide rounded blue">
+    	<section class="middle">
+	    	<h1 style="padding:50px;">Protocol is <strong>HTTP</strong><h1>
+    		<h1 style="padding:50px;">Documents stored as <strong>JSON</strong></h1>
+    		<h1 style="padding:50px;">Views written in <strong>JavaScript</strong></h1>
+        </section>
+    </div>
+    
+    <div class="slide rounded blue">
+    	<section class="middle">
+	    	<h1 style="padding:50px;">CouchDB is built of the web, for the web</h1>
         </section>
     </div>
 	
@@ -192,7 +263,6 @@
     	</section>
     </div>
     
-    
     <div class="slide rounded">
     	<section class="middle">
 <pre class="brush: xhtml;">
@@ -201,10 +271,12 @@
 <pre class="brush: javascript;"> 
 	&lt;script type="text/javascript"&gt;
 	
-		$("#yada").click(function() {
-        	console.log("Don't touch me...");
-        });
-    
+		Ext.fly("yada").on({
+			click: function() {
+	        	Ext.Msg.alert("Hey!", "Don't touch me...");
+    	    }
+    	});
+    	
     &lt;/script&gt;
 </pre>
     	</section>
@@ -246,23 +318,23 @@
     	<section class="middle">
 <pre class="brush: csharp;"> 
 	// c# - synchronous
-	System.Console.WriteLine("I'm Owen...");
+	System.Console.WriteLine("I'm Craig...");
 	System.Threading.Thread.Sleep(2000);
-	System.Console.WriteLine("...from Wales!");
+	System.Console.WriteLine("...from New Zealand!");
 </pre>
 <br />
 <pre class="brush: javascript;"> 
 	// node.js - asynchronous
 	setTimeout(function() {
-		console.log("...from Wales!");
+		console.log("...from New Zealand!");
 	}, 2000);
 	
-	console.log("I'm Owen...");
+	console.log("I'm Craig...");
 </pre>
     	</section>
     </div>
 	 
-	 
+	<!--
 	<div class="slide rounded">
     	<section class="middle">
 <pre class="brush: javascript;"> 
@@ -272,7 +344,7 @@
 		res.writeHead(200, {
 			"Content-Type": "text/html"
 		});
-		res.end("<html><body><h1>Hello WDCNZ!!!</h1></body></html>\n");
+		res.end("<html><body><h1>Hello SenchaCon!!!</h1></body></html>\n");
 	});
 	
 	server.listen(4001);
@@ -407,7 +479,7 @@ stdin.on("data", search);
 </pre>
     	</section>
     </div>
-    
+    -->
     <div class="slide rounded blue">
 		<section class="middle">
         	<h1>Node is the first platform to be invented in the GitHub age</h1>
@@ -416,7 +488,7 @@ stdin.on("data", search);
     
     <div class="slide"> 
     	<section class="middle">
-    		<img class="full-bg" src="resources/images/github-popularity.png" />
+    		<img class="full-bg" src="resources/images/github-popularity-oct.png" />
     	</section>
 	</div>    
 	
@@ -429,7 +501,7 @@ stdin.on("data", search);
 </pre>
 	
 			<div>
-				<h2 style="color:white;">2720 total packages</h2>
+				<h2 style="color:white;">4477 total packages!</h2>
 			</div>
 
 	  	</section>
@@ -460,6 +532,97 @@ stdin.on("data", search);
 			
     	</section>
     </div>-->
+    
+    <div class="slide rounded">
+    	<header> 
+			<h1>express</h1> 
+		</header> 
+		<section>
+<pre class="brush: bash">
+	npm install express
+</pre>
+			<ul>
+				<li>Built on Connect, inspired by Sinatra</li>
+				<li>RESTful routing</li>
+				<li>Cookies, sessions, caching, static files etc</li>
+				<li>Templating, partials, asynchronous rendering</li>
+				<li>Pluggable</li>
+			</ul>
+		</section>
+	</div>
+    
+    <div class="slide rounded">
+    	<header> 
+			<h1>express</h1> 
+		</header> 
+		<section>
+<pre class="brush: javascript">
+	var app = require("express").createServer();
+
+	app.get("/", function(request, response) {
+		response.redirect("/hello/senchacon");
+	});
+	
+	app.get("/hello/senchacon", function(request, response) {
+		response.send("Hello SenchaCon!");
+	});
+	
+	app.listen(4005);
+</pre>		
+    	</section>
+    </div>
+    
+    <div class="slide rounded">
+    	<header> 
+			<h1>Middleware</h1> 
+		</header> 
+		<section>
+<pre class="brush: javascript">
+	app.use(app.router);
+
+	app.use(function(err, req, res, next){
+		res.send(err.status || 500, {
+			status: err.status || 500, 
+			error: err
+	  	});
+	});
+
+	function loadUser(req, res, next) {
+		var user = users[req.params.id];
+		if (user) {
+			req.user = user;
+    		next();
+  		} else {
+    		next(new Error('Failed to load user ' + req.params.id));
+  		}
+	}
+
+	function andRestrictToSelf(req, res, next) {
+  		req.authenticatedUser.id == req.user.id
+    	? next()
+    	: next(new Error('Unauthorized'));
+	}
+
+	function andRestrictTo(role) {
+  		return function(req, res, next) {
+    		if (req.authenticatedUser.role == role) {
+      			next();
+    		} else {
+      			next(new Error('Unauthorized'));
+    		}
+  		}
+	}
+
+	app.get('/user/:id/edit', loadUser, andRestrictToSelf, function(req, res){
+  		res.send('Editing user ' + req.user.name);
+	});
+	
+	app.get('/user/:id/destroy', loadUser, andRestrictToRole("admin"), function(req, res){
+  		res.send('Deleting user ' + req.user.name);
+	});
+</pre>		
+    	</section>
+    </div>
     
     <div class="slide rounded">
     	<header> 
@@ -502,45 +665,6 @@ io.sockets.on("connection', function (socket) {
 			<div id="map-container">
 			
 			</div>
-    	</section>
-    </div>
-    
-    <div class="slide rounded">
-    	<header> 
-			<h1>express</h1> 
-		</header> 
-		<section>
-<pre class="brush: bash">
-	npm install express
-</pre>
-			<ul>
-				<li>Built on Connect, inspired by Sinatra</li>
-				<li>RESTful routing</li>
-				<li>Cookies, sessions, caching, static files etc</li>
-				<li>Templating, partials, asynchronous rendering</li>
-				<li>Pluggable</li>
-			</ul>
-		</section>
-	</div>
-    
-    <div class="slide rounded">
-    	<header> 
-			<h1>express</h1> 
-		</header> 
-		<section>
-<pre class="brush: javascript">
-	var app = require("express").createServer();
-
-	app.get("/", function(request, response) {
-		response.redirect("/hello/wdcnz");
-	});
-	
-	app.get("/hello/wdcnz", function(request, response) {
-		response.send("Hello WDCNZ!");
-	});
-	
-	app.listen(4005);
-</pre>		
     	</section>
     </div>
     
