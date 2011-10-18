@@ -447,200 +447,200 @@ input, textarea {
   font-size: .8em;
   padding: 1.2em;
 }
-/* line 33, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 33, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #333333;
   font-size: 75%;
 }
-/* line 51, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 51, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html h1, .x-html h2, .x-html h3, .x-html h4, .x-html h5, .x-html h6 {
   font-weight: normal;
   color: #222222;
 }
-/* line 52, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 52, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html h1 img, .x-html h2 img, .x-html h3 img, .x-html h4 img, .x-html h5 img, .x-html h6 img {
   margin: 0;
 }
-/* line 53, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 53, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html h1 {
   font-size: 3em;
   line-height: 1;
   margin-bottom: 0.50em;
 }
-/* line 54, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 54, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html h2 {
   font-size: 2em;
   margin-bottom: 0.75em;
 }
-/* line 55, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 55, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1.00em;
 }
-/* line 56, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 56, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html h4 {
   font-size: 1.2em;
   line-height: 1.25;
   margin-bottom: 1.25em;
 }
-/* line 57, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 57, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html h5 {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1.50em;
 }
-/* line 58, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 58, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html h6 {
   font-size: 1em;
   font-weight: bold;
 }
-/* line 59, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 59, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html p {
   margin: 0 0 1.5em;
 }
-/* line 60, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 60, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html p .left {
   display: inline;
   float: left;
   margin: 1.5em 1.5em 1.5em 0;
   padding: 0;
 }
-/* line 61, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 61, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html p .right {
   display: inline;
   float: right;
   margin: 1.5em 0 1.5em 1.5em;
   padding: 0;
 }
-/* line 62, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 62, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html a {
   text-decoration: underline;
   color: #0066cc;
 }
-/* line 18, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .x-html a:visited {
   color: #004c99;
 }
-/* line 21, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 21, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .x-html a:focus {
   color: #0099ff;
 }
-/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .x-html a:hover {
   color: #0099ff;
 }
-/* line 27, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .x-html a:active {
   color: #bf00ff;
 }
-/* line 63, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 63, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html blockquote {
   margin: 1.5em;
   color: #666666;
   font-style: italic;
 }
-/* line 64, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 64, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html strong, .x-html dfn {
   font-weight: bold;
 }
-/* line 65, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 65, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html em, .x-html dfn {
   font-style: italic;
 }
-/* line 66, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 66, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html sup, .x-html sub {
   line-height: 0;
 }
-/* line 67, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 67, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html abbr, .x-html acronym {
   border-bottom: 1px dotted #666666;
 }
-/* line 68, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 68, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html address {
   margin: 0 0 1.5em;
   font-style: italic;
 }
-/* line 69, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 69, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html del {
   color: #666666;
 }
-/* line 70, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 70, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html pre {
   margin: 1.5em 0;
   white-space: pre;
 }
-/* line 71, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 71, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html pre, .x-html code, .x-html tt {
   font: 1em "andale mono", "lucida console", monospace;
   line-height: 1.5;
 }
-/* line 72, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 72, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html li ul, .x-html li ol {
   margin: 0;
 }
-/* line 73, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 73, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html ul, .x-html ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 1.5em;
 }
-/* line 74, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 74, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html ul {
   list-style-type: disc;
 }
-/* line 75, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 75, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html ol {
   list-style-type: decimal;
 }
-/* line 76, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 76, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html dl {
   margin: 0 0 1.5em 0;
 }
-/* line 77, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 77, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html dl dt {
   font-weight: bold;
 }
-/* line 78, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 78, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html dd {
   margin-left: 1.5em;
 }
-/* line 79, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 79, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html table {
   margin-bottom: 1.4em;
   width: 100%;
 }
-/* line 80, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 80, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html th {
   font-weight: bold;
 }
-/* line 81, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 81, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html thead th {
   background: #c3d9ff;
 }
-/* line 82, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 82, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html th, .x-html td, .x-html caption {
   padding: 4px 10px 4px 5px;
 }
-/* line 85, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 85, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html table.striped tr:nth-child(even) td,
 .x-html table tr.even td {
   background: #e5ecf9;
 }
-/* line 86, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 86, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html tfoot {
   font-style: italic;
 }
-/* line 87, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 87, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html caption {
   background: #eeeeee;
 }
-/* line 88, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 88, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html .quiet {
   color: #666666;
 }
-/* line 89, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.beta.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 89, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .x-html .loud {
   color: #111111;
 }
@@ -2987,7 +2987,18 @@ input, textarea {
   src: url(/resources/fonts/National-Bold.otf);
 }
 
-/* line 28, ../scss/xero.scss */
+@font-face {
+  font-family: 'Klavika';
+  src: url(/resources/fonts/Klavika-Medium.otf);
+}
+
+@font-face {
+  font-family: 'Klavika';
+  font-weight: bold;
+  src: url(/resources/fonts/Klavika-Bold.otf);
+}
+
+/* line 39, ../scss/xero.scss */
 body {
   font-family: "National";
   font-size: 24px;
@@ -2998,31 +3009,32 @@ body {
   left: 0;
 }
 
-/* line 39, ../scss/xero.scss */
+/* line 50, ../scss/xero.scss */
 .x-fullscreen {
   background: transparent;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f0f0f0), color-stop(50%, #eeeeee), color-stop(100%, #e8e8e8));
+  background-image: -webkit-linear-gradient(#f0f0f0, #eeeeee, #e8e8e8);
   background-image: linear-gradient(#f0f0f0, #eeeeee, #e8e8e8);
 }
 
-/* line 45, ../scss/xero.scss */
+/* line 56, ../scss/xero.scss */
 .x-html {
   padding: 0px;
 }
 
-/* line 49, ../scss/xero.scss */
+/* line 60, ../scss/xero.scss */
 body.x-tablet {
   font-size: 104%;
 }
 
-/* line 53, ../scss/xero.scss */
+/* line 64, ../scss/xero.scss */
 .x-carousel-item .x-panel-body {
   display: -webkit-box;
   -webkit-box-pack: center;
   -webkit-box-align: center;
 }
 
-/* line 59, ../scss/xero.scss */
+/* line 70, ../scss/xero.scss */
 div.slide {
   overflow: hidden;
   position: relative;
@@ -3030,21 +3042,21 @@ div.slide {
   width: 1024px;
   height: 690px;
 }
-/* line 66, ../scss/xero.scss */
+/* line 77, ../scss/xero.scss */
 div.slide.rounded {
   -webkit-border-radius: 20px;
   border-radius: 20px;
   background: white;
 }
-/* line 71, ../scss/xero.scss */
+/* line 82, ../scss/xero.scss */
 div.slide.blue {
   background: #00b7e3;
 }
-/* line 74, ../scss/xero.scss */
+/* line 85, ../scss/xero.scss */
 div.slide.blue ul {
   text-align: left;
 }
-/* line 77, ../scss/xero.scss */
+/* line 88, ../scss/xero.scss */
 div.slide.blue ul li {
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
   color: #FFF;
@@ -3055,7 +3067,35 @@ div.slide.blue ul li {
   padding: 0px;
   text-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
 }
-/* line 90, ../scss/xero.scss */
+/* line 101, ../scss/xero.scss */
+div.slide.sencha {
+  background-color: #adadad;
+}
+/* line 104, ../scss/xero.scss */
+div.slide.sencha div.fix {
+  position: relative;
+  top: 70px;
+  left: 25px;
+  height: 450px;
+}
+/* line 109, ../scss/xero.scss */
+div.slide.sencha div.fix .left {
+  float: left;
+}
+/* line 112, ../scss/xero.scss */
+div.slide.sencha div.fix .right {
+  float: left;
+  padding-top: 120px;
+}
+/* line 118, ../scss/xero.scss */
+div.slide.sencha h1 {
+  font-family: Klavika, san-serif;
+  font-weight: normal;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.8) 0 2px 2px;
+  font-size: 7em;
+}
+/* line 127, ../scss/xero.scss */
 div.slide .pageIndex {
   display: block;
   position: absolute;
@@ -3063,19 +3103,19 @@ div.slide .pageIndex {
   left: 20px;
   font-size: 12px;
 }
-/* line 98, ../scss/xero.scss */
+/* line 135, ../scss/xero.scss */
 div.slide header {
   position: absolute;
   top: 25px;
   left: 30px;
 }
-/* line 104, ../scss/xero.scss */
+/* line 141, ../scss/xero.scss */
 div.slide section, div.slide footer {
   display: block;
   margin: 100px 30px 0;
   overflow: hidden;
 }
-/* line 110, ../scss/xero.scss */
+/* line 147, ../scss/xero.scss */
 div.slide section.middle {
   display: table-cell;
   vertical-align: middle;
@@ -3083,7 +3123,7 @@ div.slide section.middle {
   width: 1024px;
   height: 690px;
 }
-/* line 119, ../scss/xero.scss */
+/* line 156, ../scss/xero.scss */
 div.slide h1 {
   font-weight: bold;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
@@ -3091,45 +3131,45 @@ div.slide h1 {
   font-size: 4em;
   font-weight: bold;
 }
-/* line 129, ../scss/xero.scss */
+/* line 166, ../scss/xero.scss */
 div.slide section h1 {
   color: #00b7e3;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
   font-size: 6em;
   font-weight: bold;
 }
-/* line 136, ../scss/xero.scss */
+/* line 173, ../scss/xero.scss */
 div.slide.blue section h1 {
   color: #FFF;
   text-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
 }
-/* line 141, ../scss/xero.scss */
+/* line 178, ../scss/xero.scss */
 div.slide h2 {
   font-size: 40px;
   margin: 15px 0 5px;
 }
-/* line 145, ../scss/xero.scss */
+/* line 182, ../scss/xero.scss */
 div.slide h2:first-child {
   margin-top: 0;
 }
-/* line 150, ../scss/xero.scss */
+/* line 187, ../scss/xero.scss */
 div.slide section ul {
   font-size: 3em;
 }
-/* line 154, ../scss/xero.scss */
+/* line 191, ../scss/xero.scss */
 div.slide section ul li {
   padding: 0px;
   color: #525455;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
-/* line 160, ../scss/xero.scss */
+/* line 197, ../scss/xero.scss */
 div.slide img.full-bg {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 167, ../scss/xero.scss */
+/* line 204, ../scss/xero.scss */
 div.slide img.shadow {
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
@@ -3141,12 +3181,12 @@ div.slide img.shadow {
     -webkit-border-bottom-right-radius: 15px;
     */
 }
-/* line 178, ../scss/xero.scss */
+/* line 215, ../scss/xero.scss */
 div.slide section > em {
   font-size: 3em;
   text-shadow: 0px 0 1px rgba(1, 1, 1, 0.3);
 }
-/* line 182, ../scss/xero.scss */
+/* line 219, ../scss/xero.scss */
 div.slide div.ribbon {
   position: absolute;
   top: 9em;
@@ -3156,33 +3196,33 @@ div.slide div.ribbon {
   background: #00b7e3;
   height: auto;
 }
-/* line 191, ../scss/xero.scss */
+/* line 228, ../scss/xero.scss */
 div.slide div.ribbon span {
   font-size: 3em;
   color: #FFF;
   display: block;
   width: 100%;
 }
-/* line 199, ../scss/xero.scss */
+/* line 236, ../scss/xero.scss */
 div.slide div.ribbon.left span {
   text-align: right;
   padding-right: 20px;
 }
-/* line 206, ../scss/xero.scss */
+/* line 243, ../scss/xero.scss */
 div.slide div.ribbon.right span {
   text-align: left;
   padding-left: 20px;
 }
-/* line 213, ../scss/xero.scss */
+/* line 250, ../scss/xero.scss */
 div.slide.node {
   background: #22252A;
 }
-/* line 216, ../scss/xero.scss */
+/* line 253, ../scss/xero.scss */
 div.slide.node a, div.slide.node a:link, div.slide.node a:hover, div.slide.node a:active {
-  color: #ccdd55 !important;
+  color: #CD5 !important;
   font-size: 2em;
 }
-/* line 222, ../scss/xero.scss */
+/* line 259, ../scss/xero.scss */
 div.slide section h3 {
   color: #525455;
   font-weight: bold;
@@ -3192,36 +3232,36 @@ div.slide section h3 {
   margin-left: 0px;
 }
 
-/* line 232, ../scss/xero.scss */
+/* line 269, ../scss/xero.scss */
 .syntaxhighlighter {
   margin-left: 50px !important;
   font-size: 2em !important;
 }
-/* line 236, ../scss/xero.scss */
+/* line 273, ../scss/xero.scss */
 .syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
   background-color: transparent !important;
 }
-/* line 239, ../scss/xero.scss */
+/* line 276, ../scss/xero.scss */
 .syntaxhighlighter .line.highlighted.alt1 code, .syntaxhighlighter .line.highlighted.alt2 code {
   font-weight: bold !important;
 }
 
-/* line 245, ../scss/xero.scss */
+/* line 282, ../scss/xero.scss */
 div.node div.syntaxhighlighter {
-  background: #22252a !important;
+  background: #22252A !important;
   margin-left: 0px !important;
 }
-/* line 249, ../scss/xero.scss */
+/* line 286, ../scss/xero.scss */
 div.node div.syntaxhighlighter .line.alt1, div.node div.syntaxhighlighter .line.alt2 {
-  background: #22252a !important;
+  background: #22252A !important;
   text-align: center !important;
 }
-/* line 253, ../scss/xero.scss */
+/* line 290, ../scss/xero.scss */
 div.node div.syntaxhighlighter .line.alt1 code.bash, div.node div.syntaxhighlighter .line.alt2 code.bash {
-  color: white !important;
+  color: #FFF !important;
 }
 
-/* line 259, ../scss/xero.scss */
+/* line 296, ../scss/xero.scss */
 .longcode .syntaxhighlighter {
   font-size: 1.5em !important;
 }

@@ -25,6 +25,17 @@ $base-line-height: 18px;
 	src: url(/resources/fonts/National-Bold.otf); 
 }
 
+@font-face { 
+	font-family: 'Klavika'; 
+	src: url(/resources/fonts/Klavika-Medium.otf); 
+}
+
+@font-face { 
+	font-family: 'Klavika'; 
+	font-weight: bold;
+	src: url(/resources/fonts/Klavika-Bold.otf); 
+}
+
 body {
     font-family: "National";//, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", "Bitstream Vera Sans", sans-serif;
     font-size: 24px;
@@ -87,6 +98,32 @@ div.slide {
 		
 	}
 	
+	&.sencha {
+		background-color: #adadad;
+		
+		div.fix {
+			position: relative;
+			top: 70px;
+			left: 25px;
+			height: 450px;
+			.left {
+				float:left;
+			}
+			.right {
+				float:left;
+				padding-top:120px;	
+			}	
+		}
+		
+		h1 {
+			font-family: Klavika, san-serif;
+			font-weight: normal;
+			color: white;
+			text-shadow:rgba(0, 0, 0, 0.8) 0 2px 2px;
+			font-size:7em;
+		}					
+	}
+	
 	.pageIndex {
 		display: block;
 		position: absolute;
@@ -133,9 +170,11 @@ div.slide {
 		font-weight: bold;
 	}
 	
-	&.blue section h1 {
-		color: #FFF;
-		text-shadow: 1px 0 2px rgba(0,0,0,0.3);
+	&.blue {
+		section h1, h1 {
+			color: #FFF;
+			text-shadow: 1px 0 2px rgba(0,0,0,0.3);
+		}
 	}
 	
 	h2 {
