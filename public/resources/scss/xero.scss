@@ -298,3 +298,27 @@ div.node div.syntaxhighlighter {
 .longcode .syntaxhighlighter {
 	font-size: 1.5em !important;
 }
+
+.longcode.reduce {
+	.syntaxhighlighter {
+		font-size: 1.1em !important;
+	}
+//	.syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .syntaxhighlighter table caption, .syntaxhighlighter textarea {
+//		font-size: 0.9em !important;
+//	}
+}
+
+.bigcode {
+
+	margin-left: 10px !important;
+	
+	.syntaxhighlighter {
+		margin-left: 20px;
+		overflow: none !important;
+	}
+	.syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .syntaxhighlighter table caption, .syntaxhighlighter textarea {
+		font-size: 75px !important;
+	}
+}
+
+

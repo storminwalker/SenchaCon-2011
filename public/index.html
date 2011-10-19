@@ -37,9 +37,15 @@
 	
 	<div class="slide" style="width:auto;height:auto;"> 
     	<section class="middle">
-    		<img src="resources/images/xero-dashboard2.png" />
+    		<img src="resources/images/xero-dashboard.png" />
     	</section>
 	</div>   
+	
+	<div class="slide" style="width:auto;height:auto;"> 
+    	<section class="middle">
+    		<img src="resources/images/mobile.png" />
+    	</section>
+	</div>  
 	
     <div class="slide"> 
     	<section class="middle">
@@ -94,12 +100,12 @@
     	</section>
 	</div>    
 	
-	<div class="slide rounded blue">
+	<div class="slide rounded">
 		<header>
 			<h1>The single page app...</h1>
 		</header>
     	<section class="middle">
-    		<h1 style="padding:50px;">do single page apps drawing</h1>
+    	 	<img src="resources/images/single-page-app.png" style="margin-top: 100px;" />
         </section>
     </div>
     
@@ -114,54 +120,55 @@
 	    	<img src="resources/images/js.png" style="border: solid 1px black"/>
     	</section>
 	</div>    
-	
+
 	<div class="slide rounded blue">
     	<section class="middle">
-    		<h1 style="padding:50px;">Context</h1>
-        </section>
-    </div>
-	
-	<div class="slide rounded blue">
-    	<section class="middle">
-    		<h1 style="padding:50px;">Human</h1>
-    		<h1 style="padding:50px;">Context</h1>
+    		<h1 style="padding:50px;">Why server-side JavaScript?</h1>
         </section>
     </div>
     
-    <div class="slide rounded blue">
+	<div class="slide rounded blue">
     	<section class="middle">
-    		<h1 style="padding:50px;">Human</h1>
-    		<h1 style="padding:50px;">Context</h1>
-    		<h1 style="padding:50px;">Machine</h1>
+    		<h1 style="padding:50px;">Context Switching</h1>
         </section>
+    </div>
+	
+	<div class="slide rounded blue noanimation">
+    	<section class="middle">
+    		<div style="position:absolute;left:100px;top:50px;"><img src="resources/images/context-human.png" /></div>
+			<h1 style="padding:50px;">Context Switching</h1>
+        </section>
+    </div>
+    
+    <div class="slide rounded blue noanimation">
+    	<section class="middle">
+    		<div style="position:absolute;left:100px;top:50px;"><img src="resources/images/context-human.png" /></div>
+			<h1 style="padding:50px;">Context Switching</h1>
+	    	<div style="position:absolute;right:90px;bottom:20px;"><img src="resources/images/context-machine.png" /></div>
+	    	<div style="position:absolute;left:50px;bottom:10px;color:#CCC;font-size:1em;">Images &copy; Matthew Inman (The Oatmeal)</div>
+	    </section>
     </div>
 
     <div class="slide rounded blue">
     	<section class="middle">
-    		<h1 style="padding:50px;">JavaScript Everywhere&trade;</h1>
+    		<h1 style="padding:50px;">JavaScript Everywhere&trade;</h1> <!-- So what does the modern server-side app platform look like? -->
         </section>
     </div>
     
-    <div class="slide rounded blue">
+    <div class="slide rounded node" style="background:#000000;"> 
     	<section class="middle">
-    		<h1 style="padding:50px;">JavaScript Everywhere&trade;</h1>
-        </section>
-    </div>
-    
-    <div class="slide" style="background:#000000;"> 
-    	<section class="middle">
-	    	<img src="resources/images/couchdb-logo.png"/>
+	    	<img src="resources/images/couchdb-logo.jpeg"/>
 <pre class="brush: bash;"> 
 	brew install couchdb
 </pre>
     	</section>
 	</div>    
 	
-	<div class="slide blue"> 
+	<div class="slide rounded"> 
     	<header>
     		<h1>CouchDB</h1>
     	</header>
-    	<section class="middle">
+    	<section>
 			<ul>
 				<li>Document oriented database</li>
 				<li>Efficient & reliable bi-directional replication</li>
@@ -174,9 +181,11 @@
 	
 	<div class="slide rounded blue">
     	<section class="middle">
-	    	<h1 style="padding:50px;">Protocol is <strong>HTTP</strong><h1>
-    		<h1 style="padding:50px;">Documents stored as <strong>JSON</strong></h1>
-    		<h1 style="padding:50px;">Views written in <strong>JavaScript</strong></h1>
+    		<ul>
+    			<li>Protocol is HTTP</li>
+    			<li>Documents stored as JSON</li>
+    			<li>Views written in JavaScript</li>
+    		</ul>
         </section>
     </div>
     
@@ -189,6 +198,19 @@
 	<div class="slide rounded" style="background:#22252A">
 		<section class="middle">
 			<img src="resources/images/node_turtle.png" />
+		</section>
+	</div>
+	
+	<div class="slide rounded node">
+		<section class="middle">
+			<img src="resources/images/node-logo2.png" />
+			
+<pre class="brush: bash;"> 
+	brew install node
+</pre>
+			<div>
+				<a href="https://github.com/joyent/node/wiki/Installation" target="_blank">https://github.com/joyent/node/wiki/Installation</a>
+			</div>
 		</section>
 	</div>
 	
@@ -265,6 +287,26 @@
     
     <div class="slide rounded">
     	<section class="middle">
+<pre class="brush: csharp;"> 
+	// c# - synchronous
+	System.Console.WriteLine("I'm Craig...");
+	System.Threading.Thread.Sleep(2000);
+	System.Console.WriteLine("...from New Zealand!");
+</pre>
+<br />
+<pre class="brush: javascript;"> 
+	// node.js - asynchronous
+	setTimeout(function() {
+		console.log("...from New Zealand!");
+	}, 2000);
+	
+	console.log("I'm Craig...");
+</pre>
+    	</section>
+    </div>
+	 
+    <div class="slide rounded">
+    	<section class="middle">
 <pre class="brush: xhtml;">
      <input id="yada" type="button" value="Touch me" />
 </pre>
@@ -301,39 +343,7 @@
         </section>
     </div>
     
-    <div class="slide rounded node">
-		<section class="middle">
-			<img src="resources/images/node-logo.png" />
-			
-<pre class="brush: bash;"> 
-	brew install node
-</pre>
-			<div>
-				<a href="https://github.com/joyent/node/wiki/Installation" target="_blank">https://github.com/joyent/node/wiki/Installation</a>
-			</div>
-		</section>
-	</div>
-	 
-	<div class="slide rounded">
-    	<section class="middle">
-<pre class="brush: csharp;"> 
-	// c# - synchronous
-	System.Console.WriteLine("I'm Craig...");
-	System.Threading.Thread.Sleep(2000);
-	System.Console.WriteLine("...from New Zealand!");
-</pre>
-<br />
-<pre class="brush: javascript;"> 
-	// node.js - asynchronous
-	setTimeout(function() {
-		console.log("...from New Zealand!");
-	}, 2000);
-	
-	console.log("I'm Craig...");
-</pre>
-    	</section>
-    </div>
-	 
+    
 	<!--
 	<div class="slide rounded">
     	<section class="middle">
@@ -394,7 +404,6 @@
 
     <div class="slide rounded">
     	<section class="middle longcode">
-    	<!--highlight: [1, 3]-->
 <pre class="brush: javascript;"> 
 var http = require("http"), qs = require("querystring");
 
@@ -432,7 +441,6 @@ stdin.on("data", search);
     		<h1>Modules</h1>
     	</header>
     	<section class="middle">
-    	<!--highlight: [1, 3]-->
 <pre class="brush: javascript;"> 
 	var util = require("util");
 	
@@ -455,7 +463,6 @@ stdin.on("data", search);
     
     <div class="slide rounded">
     	<section class="middle">
-    	<!--highlight: [1, 3]-->
 <pre class="brush: javascript; highlight: [1, 3, 19]"> 
 	var module = { exports: {} }; 
 	
@@ -486,12 +493,12 @@ stdin.on("data", search);
     	</section>
     </div>
     
-    <div class="slide"> 
+    <div class="slide" style="width:auto;height:auto;"> 
     	<section class="middle">
-    		<img class="full-bg" src="resources/images/github-popularity-oct.png" />
+    		<img src="resources/images/github-popularity-oct.png" />
     	</section>
-	</div>    
-	
+	</div>  
+    
     <div class="slide rounded node">
     	<section class="middle">
 			<img src="resources/images/npm.png" />
@@ -542,11 +549,12 @@ stdin.on("data", search);
 	npm install express
 </pre>
 			<ul>
-				<li>Built on Connect, inspired by Sinatra</li>
+				<li>Built on Connect (a Sencha Labs project)</li>
 				<li>RESTful routing</li>
 				<li>Cookies, sessions, caching, static files etc</li>
 				<li>Templating, partials, asynchronous rendering</li>
 				<li>Pluggable</li>
+				<li>Lightweight, fast & awesome</li>
 			</ul>
 		</section>
 	</div>
@@ -573,54 +581,82 @@ stdin.on("data", search);
     </div>
     
     <div class="slide rounded">
-    	<header> 
-			<h1>Middleware</h1> 
-		</header> 
-		<section>
+    	<header>
+    		<h1>Middleware</h1>
+    	</header>
+    	<section class="longcode reduce" style="margin-top: 75px !important;">
 <pre class="brush: javascript">
 	app.use(app.router);
 
-	app.use(function(err, req, res, next){
-		res.send(err.status || 500, {
-			status: err.status || 500, 
-			error: err
-	  	});
+	app.use(function(err, req, res, next) {
+		res.send(err.status || 500, { error: err });
 	});
 
 	function loadUser(req, res, next) {
-		var user = users[req.params.id];
-		if (user) {
-			req.user = user;
-    		next();
-  		} else {
-    		next(new Error('Failed to load user ' + req.params.id));
-  		}
+		db.getUser(req.params.id, function(err, user) {
+			if (user) {
+				req.user = user;
+    			next();
+  			} else 
+  				next(new Error('Failed to load user ' + req.params.id));
+		});
 	}
 
-	function andRestrictToSelf(req, res, next) {
-  		req.authenticatedUser.id == req.user.id
-    	? next()
-    	: next(new Error('Unauthorized'));
+	function restrictToSelf(req, res, next) {
+  		(req.authenticatedUser.id == req.user.id) ? next() : next(new Error('Unauthorized'));
 	}
 
-	function andRestrictTo(role) {
+	function restrictToRole(role) {
   		return function(req, res, next) {
-    		if (req.authenticatedUser.role == role) {
-      			next();
-    		} else {
-      			next(new Error('Unauthorized'));
-    		}
+    		(req.authenticatedUser.role == role) ? next() : next(new Error('Unauthorized'));
   		}
 	}
 
-	app.get('/user/:id/edit', loadUser, andRestrictToSelf, function(req, res){
-  		res.send('Editing user ' + req.user.name);
+	app.get("/user/:id/edit", loadUser, restrictToSelf, function(req, res) {
+  		res.send("Editing user " + req.user.name);
 	});
 	
-	app.get('/user/:id/destroy', loadUser, andRestrictToRole("admin"), function(req, res){
+	app.get("/user/:id/destroy", loadUser, restrictToRole("admin"), function(req, res) {
   		res.send('Deleting user ' + req.user.name);
 	});
 </pre>		
+    	</section>
+    </div>
+    
+    <div class="slide rounded blue">
+		<section class="middle">
+        	<h1>A simple example</h1>
+    	</section>
+    </div>
+    
+    <div class="slide rounded sencha">
+		<section> <!-- style="background-color:#efefef;">-->
+			<div class="fix">
+				<div class="left"><img src="resources/images/sencha-logo.png" /></div>
+				<div class="right">
+					<h1 style="font-size:6em;">Server-side Sencha</h1>
+				</div>
+			</div>
+		</section>
+	</div>
+    
+    <div class="slide rounded">
+		<section class="bigcode" style="margin-top:250px;">
+<pre class="brush: bash">
+	npm install node-extjs
+</pre>
+		</section>
+	</div>
+	
+	<div class="slide rounded blue">
+		<section class="middle">
+        	<h1>A complex example</h1>
+    	</section>
+    </div>
+	
+	<div class="slide rounded blue">
+		<section class="middle">
+        	<h1 style="padding:200px">Building the real-time web</h1>
     	</section>
     </div>
     
@@ -657,6 +693,29 @@ io.sockets.on("connection', function (socket) {
 &lt;/script&gt;
 </pre>
 
+    	</section>
+    </div>
+    
+    <div class="slide rounded blue">
+		<section class="middle">
+        	<h1>Demo</h1>
+    	</section>
+    </div>
+    
+    <div class="slide rounded">
+    	<section class="bigcode">
+<pre class="brush: bash">
+	npm install now
+	
+	npm install dnode
+	
+	npm install hook.io
+</pre>
+</div>
+    
+    <div class="slide rounded blue">
+		<section class="middle">
+        	<h1>Demo</h1>
     	</section>
     </div>
     
@@ -734,20 +793,20 @@ $ forever stopall
     		<header> 
 			<h1>node-inspector</h1> 
 		</header> 
-		<section>
+		<section style="margin-top:75px">
 <pre class="brush: bash">
 	npm install node-inspector
 </pre>
-<img src="resources/images/node-inspector.png" style="position:absolute;top:155px;right:126px;"/>
+<img src="resources/images/node-inspector.png" style="position:absolute;top:145px;right:126px;"/>
 		</section>
 	</div>
-  
+   <!--
     <div class="slide rounded blue">
 		<section class="middle">
         	<h1>When to Node?</h1>
     	</section>
     </div>
-  
+ 
 	<div class="slide rounded blue">
 		<section class="middle">
         	<h1>Real-Time Apps</h1>
@@ -777,18 +836,50 @@ $ forever stopall
         	<h1>Single-Page Apps</h1>
     	</section>
     </div>
+	-->
+	
+	<div class="slide rounded blue">
+		<section class="middle">
+        	<h1>L A M P</h1>
+    	</section>
+    </div>
     
-    <div class="slide rounded"> 
+	<div class="slide rounded blue">
+		<section class="middle">
+        	<h1>L A M R</h1>
+    	</section>
+    </div>
+    
+	<div class="slide rounded blue">
+		<section class="middle">
+        	<h1>W I S N</h1>
+    	</section>
+    </div>
+    
+	<div class="slide rounded"> 
+    	<section class="middle">
+    		<img src="resources/images/cnn-logo.png" />
+    	</section>
+	</div>  
+	
+	<div class="slide rounded"> 
+    	<section class="middle">
+    		<img src="resources/images/cnn-logo.png" />
+    		<h1>Cloud, Node, NoSQL?</h1>
+    	</section>
+	</div>  
+    
+	<div class="slide rounded"> 
     	<section class="middle">
     		<img src="resources/images/scott-guthrie.png" />
     	</section>
 	</div>  
-    
+	
     <div class="slide rounded blue">
 		<section class="middle">
 			<img src="resources/images/xero_logo_white.png" />
         	<h1>Questions?</h1>
-        	<em style="color:yellow;text-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);">http://xero.com/careers</em>
+        	<em style="color:yellow;text-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);">https://github.com/storminwalker/SenchaCon-2011/</em>
     	</section>
     </div>
     
