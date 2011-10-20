@@ -93,13 +93,13 @@
 			<img style="margin-top:20px;" src="resources/images/modern-app-platform.png" />
 		</section>
 	</div>
-	
+	<!--
 	<div class="slide rounded"> 
     	<section class="middle">
 	    	<img src="resources/images/browser-logos.png" />
     	</section>
 	</div>    
-	
+	-->
 	<div class="slide rounded">
 		<header>
 			<h1>The single page app...</h1>
@@ -129,22 +129,22 @@
     
 	<div class="slide rounded blue">
     	<section class="middle">
-    		<h1 style="padding:50px;">Context Switching</h1>
+    		<h1 style="padding:200px;">Context Switching</h1>
         </section>
     </div>
 	
 	<div class="slide rounded blue noanimation">
     	<section class="middle">
-    		<div style="position:absolute;left:100px;top:50px;"><img src="resources/images/context-human.png" /></div>
-			<h1 style="padding:50px;">Context Switching</h1>
+    		<div style="position:absolute;left:75px;top:100px;"><img src="resources/images/context-human-2.png" /></div>
+			<h1 style="padding:200px;">Context Switching</h1>
         </section>
     </div>
     
     <div class="slide rounded blue noanimation">
     	<section class="middle">
-    		<div style="position:absolute;left:100px;top:50px;"><img src="resources/images/context-human.png" /></div>
-			<h1 style="padding:50px;">Context Switching</h1>
-	    	<div style="position:absolute;right:90px;bottom:20px;"><img src="resources/images/context-machine.png" /></div>
+    		<div style="position:absolute;left:75px;top:100px;"><img src="resources/images/context-human-2.png" /></div>
+			<h1 style="padding:200px;">Context Switching</h1>
+	    	<div style="position:absolute;right:60px;top:205px;"><img src="resources/images/context-machine.png" /></div>
 	    	<div style="position:absolute;left:50px;bottom:10px;color:#CCC;font-size:1em;">Images &copy; Matthew Inman (The Oatmeal)</div>
 	    </section>
     </div>
@@ -171,6 +171,7 @@
     	<section>
 			<ul>
 				<li>Document oriented database</li>
+				<li>Schema-less</li>
 				<li>Efficient & reliable bi-directional replication</li>
 				<li>Queried & indexed using MapReduce</li>
 				<li>Multiversion Concurrency Control</li>	
@@ -182,9 +183,9 @@
 	<div class="slide rounded blue">
     	<section class="middle">
     		<ul>
-    			<li>Protocol is HTTP</li>
-    			<li>Documents stored as JSON</li>
-    			<li>Views written in JavaScript</li>
+    			<li style="font-size:1.8em;line-height:auto;"><span style="font-weight:normal;">Protocol is</span> HTTP</li>
+    			<li style="font-size:1.8em;line-height:auto;"><span style="font-weight:normal;">Documents stored as</span> JSON</li>
+    			<li style="font-size:1.8em;line-height:auto;"><span style="font-weight:normal;">Views written in</span> JavaScript</li>
     		</ul>
         </section>
     </div>
@@ -203,7 +204,7 @@
 	
 	<div class="slide rounded node">
 		<section class="middle">
-			<img src="resources/images/node-logo2.png" />
+			<img src="resources/images/node-logo2.png" style="margin-left:140px;" />
 			
 <pre class="brush: bash;"> 
 	brew install node
@@ -444,7 +445,7 @@ stdin.on("data", search);
 <pre class="brush: javascript;"> 
 	var util = require("util");
 	
-	var wdcnz = exports;
+	var sencha = exports;
 	
 	var printName = function(name, from) {
 		console.log("private");
@@ -456,7 +457,7 @@ stdin.on("data", search);
 		printName(name, from);
 	}
 	
-	wdcnz.print = print;
+	sencha.print = print;
 </pre>
     	</section>
     </div>
@@ -469,7 +470,7 @@ stdin.on("data", search);
 	(function(module, exports) { 
 		var util = require("util");
 		
-		var wdcnz = exports;
+		var sencha = exports;
 		
 		var printName = function(name, from) {
 			console.log("private");
@@ -481,7 +482,7 @@ stdin.on("data", search);
 			printName(name, from);
 		}
 		
-		wdcnz.print = print;
+		sencha.print = print;
 	})(module, module.exports); 
 </pre>
     	</section>
@@ -521,14 +522,14 @@ stdin.on("data", search);
 		<section>
 <pre class="brush: javascript">
 {
-  	"name": "node-wdcnz",
+  	"name": "node-sencha",
   	"description": "I love showing my package",
   	"author": "Craig Walker &lt;craig@xero.com&gt;",
-  	"homepage": "http://wdcnz.com",
+  	"homepage": "http://xero.com",
   	"dependencies": {
     	"node-extjs": "0.x.x",
     	"express": "2.3.x",
-    	"socket.io": "0.7.x"
+    	"socket.io": "0.8.x"
   	},
   	"devDependencies": {
     	"vows": "0.5.x"
@@ -674,7 +675,7 @@ stdin.on("data", search);
 var io = require("socket.io").listen(8080);
 
 io.sockets.on("connection', function (socket) {
-	socket.emit("event", { name: "Owen", from: "Wales" });
+	socket.emit("event", { name: "Craig", from: "New Zealand" });
   	socket.on("hello", function (message) {
 		socket.broadcast.emit(message);
   	});
@@ -838,47 +839,55 @@ $ forever stopall
     </div>
 	-->
 	
-	<div class="slide rounded blue">
+	<div class="slide rounded">
 		<section class="middle">
-        	<h1>L A M P</h1>
+        	<h1 style="font-size:16em;">L A M P</h1>
     	</section>
     </div>
     
-	<div class="slide rounded blue">
+	<div class="slide rounded">
 		<section class="middle">
-        	<h1>L A M R</h1>
+        	<h1 style="font-size:16em;">L A M R</h1>
     	</section>
     </div>
     
-	<div class="slide rounded blue">
+	<div class="slide rounded">
 		<section class="middle">
-        	<h1>W I S N</h1>
+        	<h1 style="font-size:16em;">W I S N</h1>
     	</section>
     </div>
     
 	<div class="slide rounded"> 
     	<section class="middle">
-    		<img src="resources/images/cnn-logo.png" />
+    		<img src="resources/images/cnn-logo.png" style="margin-bottom:130px" />
     	</section>
 	</div>  
 	
-	<div class="slide rounded"> 
+	<div class="slide rounded noanimation"> 
+    	<section class="middle">
+    		<img src="resources/images/cnn-logo.png" />
+    		<h1>Cloud</h1>
+    	</section>
+	</div>  
+	
+	<div class="slide rounded noanimation"> 
+    	<section class="middle">
+    		<img src="resources/images/cnn-logo.png" />
+    		<h1>Cloud, Node</h1>
+    	</section>
+	</div>  
+	
+	<div class="slide rounded noanimation"> 
     	<section class="middle">
     		<img src="resources/images/cnn-logo.png" />
     		<h1>Cloud, Node, NoSQL?</h1>
     	</section>
-	</div>  
-    
-	<div class="slide rounded"> 
-    	<section class="middle">
-    		<img src="resources/images/scott-guthrie.png" />
-    	</section>
-	</div>  
+	</div>
 	
     <div class="slide rounded blue">
 		<section class="middle">
 			<img src="resources/images/xero_logo_white.png" />
-        	<h1>Questions?</h1>
+        	<h1 style="margin-top:30px">Questions?</h1>
         	<em style="color:yellow;text-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);">https://github.com/storminwalker/SenchaCon-2011/</em>
     	</section>
     </div>

@@ -3062,7 +3062,7 @@ div.slide.blue ul li {
   font-size: 2.5em;
   font-weight: bold;
   list-style-type: none;
-  line-height: 0.75em;
+  line-height: 1em;
   padding: 0px;
   text-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
 }
