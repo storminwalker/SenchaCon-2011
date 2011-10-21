@@ -174,7 +174,8 @@
 				<li>Schema-less</li>
 				<li>Efficient & reliable bi-directional replication</li>
 				<li>Queried & indexed using MapReduce</li>
-				<li>Multiversion Concurrency Control</li>	
+				<li>Multiversion Concurrency Control</li>
+				<li>Streaming change notifications</li>
 				<li>RESTful API</li>
 			</ul>
     	</section>
@@ -228,12 +229,13 @@
         </section>
     </div>
     
+    <!--
     <div class="slide rounded blue">
     	<section class="middle">
     		<h1 style="padding:50px;">JavaScript is the language best suited to the goals of Node</h1>
         </section>
     </div>
-    
+    -->
     <div class="slide rounded blue">
         <section class="middle">
             <ul>
@@ -325,27 +327,8 @@
     	</section>
     </div>
     
-     <div class="slide rounded blue">
-    	<section class="middle">
-        	<h1>Node is not a web framework</h1>
-        </section>
-    </div>
+    <!-- MAYBE A SLIDE SHOWING ALL THE MODULES!! -->
     
-    <div class="slide rounded blue noanimation">
-        <section class="middle">
-            <h1>Node is about custom, scalable, networked servers</h1>
-        </section>
-    </div>
-    
-    <div class="slide rounded blue">
-        <section class="middle">
-            <h1>"All programs are pipes that take input, modify it, & output something else"</h1>
-            <em>@ryah (inventor of Node)</em>
-        </section>
-    </div>
-    
-    
-	<!--
 	<div class="slide rounded">
     	<section class="middle">
 <pre class="brush: javascript;"> 
@@ -437,6 +420,26 @@ stdin.on("data", search);
     	</section>
     </div>
     
+    <div class="slide rounded blue">
+    	<section class="middle">
+        	<h1>Node is not a web framework</h1>
+        </section>
+    </div>
+    
+    <div class="slide rounded blue noanimation">
+        <section class="middle">
+            <h1>Node is about custom, scalable, networked servers</h1>
+        </section>
+    </div>
+    
+    <div class="slide rounded blue">
+        <section class="middle">
+            <h1>"All programs are pipes that take input, modify it, & output something else"</h1>
+            <em>@ryah (inventor of Node)</em>
+        </section>
+    </div>
+    
+    <!--
     <div class="slide rounded">
     	<header>
     		<h1>Modules</h1>
@@ -509,7 +512,7 @@ stdin.on("data", search);
 </pre>
 	
 			<div>
-				<h2 style="color:white;">4477 total packages!</h2>
+				<h2 style="color:white;">4537 total packages!</h2>
 			</div>
 
 	  	</section>
@@ -895,13 +898,13 @@ $ forever stopall
 </div>
 	
 	<!-- google maps V3 --->
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+	<!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>--> 
     
     <!-- socket.io -->
-    <script type="text/javascript" src="lib/socket.io.js"></script> 
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script> 
     
     <!-- sencha touch all -->
-    <script type="text/javascript" src="lib/sencha-touch-debug.js"></script>
+    <script type="text/javascript" src="lib/sencha-touch.js"></script>
     
 	<!-- slides app -->
 	<script type="text/javascript" src="app/routes.js"></script>
@@ -912,7 +915,7 @@ $ forever stopall
 	
 	<script type="text/javascript" src="app/views/viewport.js"></script>
 	<script type="text/javascript" src="app/views/presentation.js"></script>
-	<script type="text/javascript" src="app/views/map.js"></script>
+	<!--<script type="text/javascript" src="app/views/map.js"></script>-->
 	<script type="text/javascript" src="app/controllers/presentation.js"></script>
 	
 	<!-- syntax highlighter -->
