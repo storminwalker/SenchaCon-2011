@@ -258,6 +258,28 @@ div.slide {
 		}
 	}
 	
+	&.modules {
+		section {
+			ul {
+				font-size: 2em;
+				text-align:left;
+		
+				li {
+					color: #FFF;
+					font-size: 2em;
+					font-weight: bold;
+					list-style-type: none;
+					line-height: 1em;
+					padding:0px;
+					//text-shadow: 1px 0 2px rgba(0,0,0,0.3);	
+					padding: 0px;
+					color: #525455;
+					font-family: courier;
+				}
+			}
+		}
+	}
+	
 	section h3 {
 		color: #525455;
 		font-weight: bold;

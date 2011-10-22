@@ -10,9 +10,9 @@ var fileHandler = function (request, response) {
 };
 
 var server = http.createServer(fileHandler);
-server.listen(8080);
+server.listen(8008);
 
-console.log("Server started at http://*:8080");	
+console.log("Server started at http://*:8008");	
 
 var io = require('socket.io').listen(server);
 io.configure(function() {
@@ -32,4 +32,4 @@ io.sockets.on("connection", function(socket) {
 	});
 });
 
-console.log("Socket server started at ws://*:8080");	
+console.log("Socket server started at ws://*:8008");	

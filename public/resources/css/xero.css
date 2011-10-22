@@ -3221,7 +3221,24 @@ div.slide.node a, div.slide.node a:link, div.slide.node a:hover, div.slide.node 
   color: #ccdd55 !important;
   font-size: 2em;
 }
-/* line 261, ../scss/xero.scss */
+/* line 263, ../scss/xero.scss */
+div.slide.modules section ul {
+  font-size: 2em;
+  text-align: left;
+}
+/* line 267, ../scss/xero.scss */
+div.slide.modules section ul li {
+  color: #FFF;
+  font-size: 2em;
+  font-weight: bold;
+  list-style-type: none;
+  line-height: 1em;
+  padding: 0px;
+  padding: 0px;
+  color: #525455;
+  font-family: courier;
+}
+/* line 283, ../scss/xero.scss */
 div.slide section h3 {
   color: #525455;
   font-weight: bold;
@@ -3231,55 +3248,55 @@ div.slide section h3 {
   margin-left: 0px;
 }
 
-/* line 271, ../scss/xero.scss */
+/* line 293, ../scss/xero.scss */
 .syntaxhighlighter {
   margin-left: 50px !important;
   font-size: 2em !important;
 }
-/* line 275, ../scss/xero.scss */
+/* line 297, ../scss/xero.scss */
 .syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
   background-color: transparent !important;
 }
-/* line 278, ../scss/xero.scss */
+/* line 300, ../scss/xero.scss */
 .syntaxhighlighter .line.highlighted.alt1 code, .syntaxhighlighter .line.highlighted.alt2 code {
   font-weight: bold !important;
 }
 
-/* line 284, ../scss/xero.scss */
+/* line 306, ../scss/xero.scss */
 div.node div.syntaxhighlighter {
   background: #22252a !important;
   margin-left: 0px !important;
 }
-/* line 288, ../scss/xero.scss */
+/* line 310, ../scss/xero.scss */
 div.node div.syntaxhighlighter .line.alt1, div.node div.syntaxhighlighter .line.alt2 {
   background: #22252a !important;
   text-align: center !important;
 }
-/* line 292, ../scss/xero.scss */
+/* line 314, ../scss/xero.scss */
 div.node div.syntaxhighlighter .line.alt1 code.bash, div.node div.syntaxhighlighter .line.alt2 code.bash {
   color: white !important;
 }
 
-/* line 298, ../scss/xero.scss */
+/* line 320, ../scss/xero.scss */
 .longcode .syntaxhighlighter {
   font-size: 1.5em !important;
 }
 
-/* line 303, ../scss/xero.scss */
+/* line 325, ../scss/xero.scss */
 .longcode.reduce .syntaxhighlighter {
   font-size: 1.1em !important;
 }
 
-/* line 311, ../scss/xero.scss */
+/* line 333, ../scss/xero.scss */
 .bigcode {
   margin-left: 10px !important;
 }
-/* line 315, ../scss/xero.scss */
+/* line 337, ../scss/xero.scss */
 .bigcode .syntaxhighlighter {
   margin-left: 20px;
   overflow: none !important;
 }
-/* line 319, ../scss/xero.scss */
+/* line 341, ../scss/xero.scss */
 .bigcode .syntaxhighlighter a, .bigcode .syntaxhighlighter div, .bigcode .syntaxhighlighter code, .bigcode .syntaxhighlighter table, .bigcode .syntaxhighlighter table td, .bigcode .syntaxhighlighter table tr, .bigcode .syntaxhighlighter table tbody, .bigcode .syntaxhighlighter table thead, .bigcode .syntaxhighlighter table caption, .bigcode .syntaxhighlighter textarea {
   font-size: 75px !important;
 }

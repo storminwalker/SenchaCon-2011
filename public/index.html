@@ -34,13 +34,13 @@
     		<img src="resources/images/xero_logo_white.png" style="position:absolute;right:35px;bottom:25px;" />
         </section>
     </div>
-	
+	<!--
 	<div class="slide" style="width:auto;height:auto;"> 
     	<section class="middle">
     		<img src="resources/images/xero-dashboard.png" />
     	</section>
 	</div>   
-	
+	-->
 	<div class="slide" style="width:auto;height:auto;"> 
     	<section class="middle">
     		<img src="resources/images/mobile.png" />
@@ -236,16 +236,69 @@
         </section>
     </div>
     -->
+    <div class="slide rounded modules">
+    	<section style="margin-top:25px;margin-left:100px;">
+            <div class="left" style="position:relative;width:400px;float:left;">
+            	<ul>
+					<li>console</li> 
+					<li>process</li>
+					<li>child</li>
+					<li>assert</li>
+					<li>tty</li>
+					<li>os</li>
+					<li>util</li>
+					<li>events</li>
+					<li>fs</li>
+					<li>Buffer</li>
+					<li>Streams</li>
+				</ul>
+			</div>
+			<div class="right" style="position:relative;width:400px;float:left;">
+				<ul>
+					<li>fs</li>
+					<li>path</li>
+					<li>net</li>
+					<li>dgram</li>
+					<li>dns</li>
+					<li>http</li>
+					<li>https</li>
+					<li>url</li>
+					<li>querystring</li>
+					<li>crypto</li>
+					<li>tls</li>
+				</ul>
+			</div>
+        </section>
+    </div>
+    
+    <div class="slide rounded">
+    	<section class="middle">
+<pre class="brush: javascript;"> 
+	var http = require("http");
+	
+	var server = http.createServer(function(req, res) {
+		res.writeHead(200, {
+			"Content-Type": "text/html"
+		});
+		res.end("<html><body><h1>Hello SenchaCon!!!</h1></body></html>\n");
+	});
+	
+	server.listen(4001);
+</pre>
+    	</section>
+    </div>
+    
     <div class="slide rounded blue">
         <section class="middle">
             <ul>
-            	<li>Non-blocking I/O</h1> 
+            	<li>Non-blocking I/O</li> 
             	<li>&#160;</li>
-            	<li>Evented I/O</h1>
+            	<li>Evented I/O</li>
 			</ul>
         </section>
     </div>
     
+    <!--
     <div class="slide"> 
     	<section class="middle">
     		<img src="resources/images/xero-dashboard.png" />
@@ -272,6 +325,7 @@
 			<img src="resources/images/event-loop.png" />
 	  	</section>
     </div>
+    -->
     
     <div class="slide rounded">
     	<section class="middle">
@@ -287,7 +341,7 @@
 </pre>
     	</section>
     </div>
-    
+    <!--
     <div class="slide rounded">
     	<section class="middle">
 <pre class="brush: csharp;"> 
@@ -307,7 +361,7 @@
 </pre>
     	</section>
     </div>
-	 
+	 -->
     <div class="slide rounded">
     	<section class="middle">
 <pre class="brush: xhtml;">
@@ -327,25 +381,9 @@
     	</section>
     </div>
     
-    <!-- MAYBE A SLIDE SHOWING ALL THE MODULES!! -->
-    
-	<div class="slide rounded">
-    	<section class="middle">
-<pre class="brush: javascript;"> 
-	var http = require("http");
 	
-	var server = http.createServer(function(req, res) {
-		res.writeHead(200, {
-			"Content-Type": "text/html"
-		});
-		res.end("<html><body><h1>Hello SenchaCon!!!</h1></body></html>\n");
-	});
-	
-	server.listen(4001);
-</pre>
-    	</section>
-    </div>
     
+    <!-- 
     <div class="slide rounded">
     	<section class="middle">
 <pre class="brush: javascript;"> 
@@ -419,7 +457,7 @@ stdin.on("data", search);
 </pre>
     	</section>
     </div>
-    
+    -->
     <div class="slide rounded blue">
     	<section class="middle">
         	<h1>Node is not a web framework</h1>
@@ -722,7 +760,7 @@ io.sockets.on("connection', function (socket) {
         	<h1>Demo</h1>
     	</section>
     </div>
-    
+    <!--
      <div class="slide rounded map">
     	<section class="middle">
 			<div id="map-container">
@@ -730,7 +768,7 @@ io.sockets.on("connection', function (socket) {
 			</div>
     	</section>
     </div>
-    
+    -->
  <!--    
     <div class="slide rounded">
     	<header> 
