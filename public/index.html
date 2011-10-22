@@ -272,6 +272,9 @@
     </div>
     
     <div class="slide rounded">
+    	<header>
+    		<h1>Everyone's first node app...</h1>
+    	</header>
     	<section class="middle">
 <pre class="brush: javascript;"> 
 	var http = require("http");
@@ -333,6 +336,7 @@
 	 // synchronous 
 	var result = db.query("select * from table"); 
 	// use result...
+	 
 	 
 	// asynchronous 
 	db.query("select * from table", function (result) { 
@@ -626,14 +630,8 @@ stdin.on("data", search);
     	<header>
     		<h1>Middleware</h1>
     	</header>
-    	<section class="longcode reduce" style="margin-top: 75px !important;">
+    	<section class="longcode" style="margin-top: 75px !important;">
 <pre class="brush: javascript">
-	app.use(app.router);
-
-	app.use(function(err, req, res, next) {
-		res.send(err.status || 500, { error: err });
-	});
-
 	function loadUser(req, res, next) {
 		db.getUser(req.params.id, function(err, user) {
 			if (user) {
