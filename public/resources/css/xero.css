@@ -3284,19 +3284,19 @@ div.node div.syntaxhighlighter .line.alt1 code.bash, div.node div.syntaxhighligh
 
 /* line 325, ../scss/xero.scss */
 .longcode.reduce .syntaxhighlighter {
-  font-size: 1.1em !important;
+  font-size: 20px !important;
 }
 
-/* line 333, ../scss/xero.scss */
+/* line 334, ../scss/xero.scss */
 .bigcode {
   margin-left: 10px !important;
 }
-/* line 337, ../scss/xero.scss */
+/* line 338, ../scss/xero.scss */
 .bigcode .syntaxhighlighter {
   margin-left: 20px;
   overflow: none !important;
 }
-/* line 341, ../scss/xero.scss */
+/* line 342, ../scss/xero.scss */
 .bigcode .syntaxhighlighter a, .bigcode .syntaxhighlighter div, .bigcode .syntaxhighlighter code, .bigcode .syntaxhighlighter table, .bigcode .syntaxhighlighter table td, .bigcode .syntaxhighlighter table tr, .bigcode .syntaxhighlighter table tbody, .bigcode .syntaxhighlighter table thead, .bigcode .syntaxhighlighter table caption, .bigcode .syntaxhighlighter textarea {
   font-size: 75px !important;
 }

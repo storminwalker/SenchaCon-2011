@@ -47,20 +47,22 @@ Ext.regController("presentation", {
 	
 	showPresentation: function(options, pageIndex) {
 	
-		this.socket = new XERO.utils.Socket({
-			host: document.location.hostname,
-			port: 8080,
-			listeners: {
-				message: function(cmp, msg) {
-					if(msg.page) {
-						this.goToPage(msg.page);
-					}
-				},
-				scope: this 
-			}
-		});
-  		
-  		this.socket.start();
+		if(typeof io != "undefined") {
+			this.socket = new XERO.utils.Socket({
+				host: document.location.hostname,
+				port: 8008,
+				listeners: {
+					message: function(cmp, msg) {
+						if(msg.page) {
+							this.goToPage(msg.page);
+						}
+					},
+					scope: this 
+				}
+			});
+					
+  			this.socket.start();
+  		}
   		
 		options = options || {};
 		options.xtype = "xero-views-presentation";

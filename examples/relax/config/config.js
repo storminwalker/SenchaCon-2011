@@ -1,7 +1,7 @@
 var path = require("path");
 
 var config = {
-	name : "WDCNZ Relax",
+	name : "SenchaCon Relax",
 	host: {
 		port: 4006,
 		hostname: "0.0.0.0"
@@ -20,7 +20,7 @@ var config = {
 		}
 	},
 	db: {
-		name: "wdcnz",
+		name: "senchacon",
 		configure: function(cradle) {
 			cradle.setup({ 
 				host: 'localhost',

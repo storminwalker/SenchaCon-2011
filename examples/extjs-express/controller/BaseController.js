@@ -62,11 +62,15 @@ Ext.define("ToDoIt.controller.BaseController", {
     },
     
     get: function(route, callback) {
-    	this.application.server.get(this.buildUrl(route), Ext.bind(this.authenticate, this), Ext.bind(callback, this));
+    	this.application.server.get(this.buildUrl(route), 
+    		Ext.bind(this.authenticate, this), 
+    		Ext.bind(callback, this));
     },
     
     post: function(route, callback) {
-    	this.application.server.post(this.buildUrl(route), Ext.bind(this.authenticate, this), Ext.bind(callback, this));
+    	this.application.server.post(this.buildUrl(route), 
+    		Ext.bind(this.authenticate, this), 
+    		Ext.bind(callback, this));
     },
     
     del: function(route, callback) {

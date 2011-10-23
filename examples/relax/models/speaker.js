@@ -16,13 +16,13 @@ var Speaker = exports = module.exports = function Speaker(name, title, synopsis)
 
 Speaker.prototype.validate = function(callback) {
 	var errors = [];
-	if(Ext.isEmpty(this.name)) {
+	if(this.name.length === 0) {
 		errors.push("Name is required");
 	}
-	if(Ext.isEmpty(this.title)) {
+	if(this.title.length === 0) {
 		errors.push("Title is required");
 	}
-	if(Ext.isEmpty(this.synopsis)) {
+	if(this.synopsis.length ===0) {
 		errors.push("Synopsis is required");
 	}
 	

@@ -22,7 +22,7 @@ Ext.onReady(function(){
         model: "Speaker",
         proxy: {
             type: "rest",
-            url: "/wdcnz/speakers"
+            url: "/senchacon/speakers"
         }
     });
     store.load();
@@ -30,7 +30,7 @@ Ext.onReady(function(){
 	var speakersview = Ext.create("Ext.Panel", {
         frame: true,
         width: 535,
-        title: 'WDCNZ Speakers',
+        title: 'SenchaCon Speakers',
         items: Ext.create("Ext.view.View", {
             store: store,
             tpl: [
@@ -51,7 +51,7 @@ Ext.onReady(function(){
 	speakersview.render(document.body);
 	
     var form = Ext.create("Ext.form.Panel", {
-        url: '/wdcnz/speakers/',
+        url: '/senchacon/speakers/',
         frame: true,
         title: 'Enter speaker',
         bodyStyle: "padding:5px 5px 0",

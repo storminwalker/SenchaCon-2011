@@ -6,13 +6,13 @@ module.exports = function(app){
 		response.redirect("index.html");
 	});
 
-	app.get("/wdcnz/speakers", function(request, response) {
+	app.get("/senchacon/speakers", function(request, response) {
 		Speaker.all(function(errs, docs) {
 			response.send(docs)
 		});		
 	});
 
-	app.get("/wdcnz/speakers/count", function(request, response) {
+	app.get("/senchacon/speakers/count", function(request, response) {
 		response.send(Speaker.count());		
 	});
 	
@@ -26,11 +26,11 @@ module.exports = function(app){
 	    });
 	});
 	
-	app.get('/wdcnz/speakers/:id', function(request, response){
+	app.get('/senchacon/speakers/:id', function(request, response){
 		response.send(request.speaker);
   	});
 
-	app.post('/wdcnz/speakers/', function(request, response){
+	app.post('/senchacon/speakers/', function(request, response){
 		var data = request.body;
 		var	speaker = new Speaker(data.name, data.title, data.synopsis);
 	

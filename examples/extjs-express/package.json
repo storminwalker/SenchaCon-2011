@@ -1,8 +1,9 @@
 { 
 	"name": "todoit", 
-	"description": "Yet another ToDo application - built using node-extjs - ExtJS everywhere all-the-time...",
+	"description": "Yet another ToDo application - built using node-extjs and node-extjs-express - ExtJS everywhere all-the-time...",
 	"version": "0.9.1",
 	"dependencies": {
+		"node-extjs-express": ">= 0.1.0",
 		"now": ">=0.7.0",
 		"ejs": ">=0.0.1",
 		"connect": "1.x"

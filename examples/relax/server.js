@@ -1,6 +1,5 @@
 
-var extjs = require("node-extjs"),
-	express = require("express"),
+var express = require("express"),
 	config = require("./config/config.js");
 	
 // configure the app...
