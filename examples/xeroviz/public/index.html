@@ -23,7 +23,7 @@
  
 </head>
 <body>
-	<div id="graph-container" style="margin: 40px; position: relative;"></div>
+	<div id="graph-container" style="position: absolute; top: 40px; right: 170px; z-index: 1000;"></div>
 	
 	<div id="map-container" style="margin: 40px; position: relative;"></div>
 	
@@ -37,8 +37,8 @@
 			
 			Ext.create('Ext.Panel', {
                 layout: 'fit',
-                width:512,
-                height:334,
+                width:1024,
+                height:668,
                 border: false,
                 x: 40,
                 y: 60,
@@ -46,7 +46,7 @@
                 items: {
                     xtype: "vizmap",
                     socket: socket,
-                    zoomLevel: 1,
+                    zoomLevel: 2,
 					gmapType: 'map',
 					mapConfOpts: ['enableScrollWheelZoom','enableDoubleClickZoom','enableDragging'],
 					mapControls: ['GSmallMapControl','GMapTypeControl'],
@@ -59,7 +59,7 @@
            
 			Ext.create('Ext.Panel', {
 				width: 512,
-				height: 300,
+				height: 150,
 				renderTo: "graph-container",
 				layout: 'fit',
 				items: [{
