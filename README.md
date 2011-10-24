@@ -31,13 +31,27 @@ If you don't have a Mac then go here for instructions:
 
 I haven't tested this code using 0.5 (unstable) so it's currently targeting 0.4.x.
 
+### Run npm
+
+First install npm if you haven't already:
+
+	curl http://npmjs.org/install.sh | sh
+	
+Then run npm on the SenchaCon-2011 folder:
+
+	npm install
+	
+This will install all the dependencies for the application using the package.json file.
+
+You will need to also run npm install on any directory in the examples folder that have a package.json file.
+
 ### Run the server
 
 Open terminal and type:
 
 	node server.js
 	
-This will start the server on localhost at port 8000.
+This will start the server on localhost at port 8008.
 
 Go to your Chrome browser and go to http://localhost:8008/ to see it working. You will notice the url changing to #/1 - the slide deck has back button support built in. 
 
@@ -49,9 +63,17 @@ Basically it's just using a simple socket.io server that broadcasts the page of 
 
 ### Run the examples
 
-All my code samples are in /examples (each js file has how you run it commented out in the file - so that you don't need to figure it out).
+All my code samples are in /examples folder (most of the js files have how you run it commented out in the file - so that you don't need to figure it out).
+
+If the folder has a package.json please run
+
+	npm install
+	
+on that folder to install any dependencies.
 
 You may also want to check out my other projects referenced in this talk:
 
 [node-extjs](http://github.com/storminwalker/node-extjs)
 [node-extjs-express](http://github.com/storminwalker/node-extjs)
+
+
