@@ -72,7 +72,7 @@ Ext.define("XERO.controller.Viz", {
 			remoteAddress = data.ip;
 		}
 	
-		this.cityDb.lookup(remoteAddress, function(location) {
+		this.cityDb.lookup(remoteAddress, function(err, location) {
 			if(location && location.latitude) {
 				Ext.apply(data, {
 					type: "location",
