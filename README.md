@@ -74,6 +74,7 @@ on that folder to install any dependencies.
 You may also want to check out my other projects referenced in this talk:
 
 [node-extjs](http://github.com/storminwalker/node-extjs)
+
 [node-extjs-express](http://github.com/storminwalker/node-extjs)
 
 
