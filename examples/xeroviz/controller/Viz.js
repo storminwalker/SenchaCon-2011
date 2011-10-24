@@ -6,6 +6,7 @@ Ext.define("XERO.controller.Viz", {
     extend: "Ext.app.Controller",
 
 	hitCount: 0,
+	clients: [],
 	
 	// init the routing...
     init: function(app) {
@@ -15,6 +16,7 @@ Ext.define("XERO.controller.Viz", {
     },
     
     onLaunch: function() {
+    	var me = this;
         var task = {
 			run: this.broadcastHits,
 			scope: this,
@@ -22,16 +24,20 @@ Ext.define("XERO.controller.Viz", {
 		};
 		
 		this.application.io.sockets.on("connection", function(client){
-			console.log("new client - starting task");
-			// start the task runner
-			Ext.TaskManager.start(task);
+			if(me.clients.length == 0) {
+				Ext.TaskManager.start(task);
+			}
 			
-			client.on('disconnect', function(){ 
-				console.log("lost client - stopping task"); 
+			me.clients.push(client);
+			
+			client.on('disconnect', function(client){ 
 				// stop the task runner - only collect hits when a connection is live
-				Ext.TaskManager.stop(task);
+				me.clients = Ext.Array.remove(me.clients, client);
+				if(me.clients.length == 0) {
+					Ext.TaskManager.stop(task);
+				}
 			})
-		});
+		});leftleft
     },
     
     initGeoLookup: function() {
@@ -57,32 +63,38 @@ Ext.define("XERO.controller.Viz", {
 	},
 
 	broadcastLocation: function(data) {
-		var remoteAddress;
+		var me = this,
+			remoteAddress;
       		
 		if(data.ip == "127.0.0.1") {
 			remoteAddress = "8.8.8.8";
 		} else {
 			remoteAddress = data.ip;
 		}
-		
-		Ext.apply(data, {
-			type: "location",
-			timestamp: new Date(),
-			location: this.cityDb.lookupSync(remoteAddress)
+	
+		this.cityDb.lookup(remoteAddress, function(location) {
+			if(location && location.latitude) {
+				Ext.apply(data, {
+					type: "location",
+					timestamp: new Date(),
+					location: location
+				});
+				me.application.io.sockets.emit("message", data);
+			}		
 		});
-		
-		if(data.location && data.location.latitude) {
-			this.application.io.sockets.emit("message", data);
-		}	
 	},
 	
 	broadcastHits: function() {
+		var hits = this.hitCount;
+		this.hitCount = 0;
+		
 		this.application.io.sockets.emit("message", {
 			type: "hits",
 			timestamp: new Date(),
-			hits: this.hitCount
+			hits: hits
 		});
-		this.hitCount = 0;
+		
+		delete hits;
 	}
 })
     

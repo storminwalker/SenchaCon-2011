@@ -1,8 +1,4 @@
 
-// add this directory to the require paths
-require.paths.unshift(__dirname);
-require.paths.unshift(__dirname + "./../../../node-extjs-express");
-
 require("node-extjs-express");
 
 new Ext.express.Application({
@@ -18,7 +14,6 @@ new Ext.express.Application({
 	
 	configureExpress: function(express, server) {
 		server.use(express.logger(':method :url :status'));
-		server.use(express.methodOverride());
 		server.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 		server.use(server.router);
 		server.use(express.static(__dirname + '/images'));
@@ -40,6 +35,5 @@ new Ext.express.Application({
   	launch: function() {
   		console.log('Socket server running at ws://*:' + this.port);
 		console.log('Tracking server running at http://*:' + this.port + '/tracking.gif');
-		
   	}
 });

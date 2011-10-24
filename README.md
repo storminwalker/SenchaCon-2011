@@ -4,7 +4,7 @@ SenchaCon 2011
 Apocalypse Node
 ---------------
 
-These are my slides and all the example code I had in my talk. Most of the code in my slide deck are runnable node scripts.
+These are my slides and all the example code I used in my talk at SenchaCon 2011. Most of the code in my slide deck are runnable node scripts.
 
 The deck has been built using [Sencha Touch](http://www.sencha.com/products/touch/). While I know that sounds weird there is a reason...
 
